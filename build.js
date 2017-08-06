@@ -1,19 +1,23 @@
+// Metalsmith
+
 var Metalsmith = require('metalsmith'),
+		assets = require('metalsmith-assets'),
     markdown = require('metalsmith-markdown'),
-    layouts = require('metalsmith-layouts'),
-    collections = require('metalsmith-collections'),
-    permalinks = require('metalsmith-permalinks'),
+		collections = require('metalsmith-collections'),
+		permalinks = require('metalsmith-permalinks'),
+		layouts = require('metalsmith-layouts'),
 		serve = require('metalsmith-serve'),
 		watch = require('metalsmith-watch');
 
 Metalsmith(__dirname)
 		.metadata({
 			site: {
-				name: 'Electroniq',
-				description: "Electroniq is astrophysicist (and retro music enthusiast) Tara Himmels' blog."
+				name: 'William Dingwall | Designer + Developer',
+				description: "I build stuff"
 			}
 		})
-		.source('./src')
+		.source('./content')
+    .use(markdown())
     .use(collections({
         pages: {
             pattern: '*.md'
@@ -24,7 +28,6 @@ Metalsmith(__dirname)
 					reverse: true
         }
     }))
-    .use(markdown())
     .use(permalinks({
 				relative: false,
         pattern: ':collections/:title'
@@ -40,16 +43,24 @@ Metalsmith(__dirname)
 				feature: 'partials/feature'
         }
     }))
-		.use(serve({
-			port: 8081,
-			verbose: true
+		.use(assets({
+  		source: './assets', // relative to the working directory 
+  		destination: './' // relative to the build directory 
 		}))
-		.use(watch({
-				paths: {
-					"${source}/**/*": true,
-					"src/**/*": "**/*",
-					"layouts/**/*": "**/*"
-				}
-			}))
+//		.use(serve({
+//			port: 8081,
+//			verbose: true
+//		}))
+//		.use(watch({
+//				paths: {
+//					"${source}/**/*": true,
+//					"assets/**/*": "**/*",
+//					"content/**/*": "**/*",
+//					"layouts/**/*": "**/*"
+//				}
+//			}))
     .destination('./build')
-    .build(function (err) { if(err) console.log(err) })
+    .build(function(err, files) {
+        if (err) throw err;
+				else console.log('Success!! Portfolio Built');
+    });

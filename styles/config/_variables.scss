@@ -1,0 +1,127 @@
+//------------------------------------------------------------//
+
+// * TeamSnap-UI Config Variables
+// * 1. TeamSnap Colors
+// * 1.a Color Utilities
+// * 1.b Spot Colors (link, facebook, twitter, etc.)
+// * 2. Typography
+// * 2.a Font Families
+// * 2.b Font Weights
+// * 2.c Font Sizes
+// * 2.d Letter Spacing
+// * 2.e Line Heights
+// * 3. Spacing
+// * 4. Responsive
+// * 5. Transitions
+
+// Notes:
+// * scaleColor(), scaleFont(), and scaleGrid() functions or
+// variable utilities should be used to create consistancy in
+// color, typography, and spacing across TeamSnap web
+
+// TODO : add color variables for other social media platforms
+// TODO : look to simplify settings and re-consider themeing
+
+//------------------------------------------------------------//
+
+// * 1. Brand Colors
+
+$wd-brown:                                 #9A4414 !default;
+
+$wd-black:                                 #000000 !default;
+$wd-grey:                                  #dddddd !default;
+$wd-white:                                 #ffffff !default;
+
+// * 1.a Color Utilities
+
+$cu-foreground:                          $wd-white !default;
+$cu-foreground--light:                   $wd-white !default;
+$cu-foreground--dark:                    $wd-white !default;
+
+$cu-middleground:         scaleColor($wd-grey, 10) !default;
+$cu-middleground--light:  scaleColor($wd-grey, 10) !default;
+$cu-middleground--dark:   scaleColor($wd-grey, 10) !default;
+
+$cu-background:           scaleColor($wd-black, 8) !default;
+$cu-background--light:    scaleColor($wd-black, 8) !default;
+$cu-background--dark:     scaleColor($wd-black, 8) !default;
+
+$cu-primary:                             $wd-brown !default;
+$cu-primary--light:     scaleColor($cu-primary, 1) !default;
+$cu-primary--dark:     scaleColor($cu-primary, -2) !default;
+$cu-primary--bg:       scaleColor($cu-primary, 10) !default;
+
+$cu-info:                                $wd-black !default;
+$cu-info--light:           scaleColor($cu-info, 1) !default;
+$cu-info--dark:           scaleColor($cu-info, -2) !default;
+$cu-info--bg:             scaleColor($cu-info, 10) !default;
+
+// * 1.a Spot Colors (link, facebook, twitter, etc.)
+
+$color-facebook:                           #3B5998 !default;
+
+// * 2. Typography
+
+$fontSize:          16px !default;
+$lineHeight:         1.5 !default;
+$letterSpacing: -0.005em !default;
+
+// * 2.a Font Families
+
+$tu-playFair-fontFamily: 'Playfair Display', Georgia, serif !default;
+
+$tu-raleway-fontFamily: 'Raleway', Helvetica, sans-serif !default;
+
+// * 2.b Font Weights
+
+$tu-base-fontWeight:      400 !default;
+$tu-bold-fontWeight:      700 !default;
+
+// * 2.c Font Sizes
+
+$tu-xsmall-fontSize:           scaleFont($fontSize, -2) !default;
+$tu-small-fontSize:            scaleFont($fontSize, -1) !default;
+$tu-base-fontSize:              scaleFont($fontSize, 0) !default;
+$tu-large-fontSize:             scaleFont($fontSize, 2) !default;
+$tu-xlarge-fontSize:            scaleFont($fontSize, 5) !default;
+$tu-xxlarge-fontSize:           scaleFont($fontSize, 6) !default;
+
+// * 2.d Font Letter Spacing
+
+$tu-xsmall-letterSpacing: scaleFont($letterSpacing, -2) !default;
+$tu-small-letterSpacing:  scaleFont($letterSpacing, -1) !default;
+$tu-base-letterSpacing:    scaleFont($letterSpacing, 0) !default;
+$tu-large-letterSpacing:   scaleFont($letterSpacing, 2) !default;
+$tu-xlarge-letterSpacing:  scaleFont($letterSpacing, 5) !default;
+$tu-xxlarge-letterSpacing: scaleFont($letterSpacing, 6) !default;
+
+// * 2.e Font Line Height
+
+$tu-small-lineHeight:        scaleFont($lineHeight, -2) !default;
+$tu-base-lineHeight:          scaleFont($lineHeight, 0) !default;
+$tu-large-lineHeight:         scaleFont($lineHeight, 2) !default;
+
+// * 3. Spacing
+
+$su-xxsmall:   scaleGrid(.25) !default; // 2px
+$su-xsmall:     scaleGrid(.5) !default; // 4px
+$su-small:       scaleGrid(1) !default; // 8px
+$su-default:     scaleGrid(2) !default; // 16px
+$su-large:       scaleGrid(3) !default; // 24px
+$su-xlarge:      scaleGrid(4) !default; // 32px
+$su-xxlarge:     scaleGrid(5) !default; // 40px
+
+// * 4. Responsive
+
+$responsive: false !default;
+
+$breakpoints: (
+  'xs':  480px,
+  'sm':  768px,
+  'md':  992px,
+  'lg': 1200px
+);
+
+// * 5. Transitions
+
+$duration-short: 250ms;

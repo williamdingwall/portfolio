@@ -1,12 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8" />
-  <title>{{ title }}</title>
-  <link rel="stylesheet" type="text/css" href="./styles/main.css" />
-</head>
-<body>
-	<div class="main-wrapper">
+{{> header}}
+ 
 		<h2>{{ title }}</h2>
     {{{ contents }}}
 		
@@ -15,6 +8,5 @@
 				{{> feature}}
 			{{/if}}
 		{{/each}}
-  </div>
-</body>
-</html>
+
+{{> footer}}
