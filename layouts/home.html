@@ -1,12 +1,12 @@
 {{> header}}
- 
-		<h2>{{ title }}</h2>
+
+    <h2>{{ title }}</h2>
     {{{ contents }}}
-		
-		{{#each collections.posts}}
-			{{#if featured}}
-				{{> feature}}
-			{{/if}}
-		{{/each}}
+
+    {{#each collections.posts}}
+      {{#if featured}}
+        {{> feature}}
+      {{/if}}
+    {{/each}}
 
 {{> footer}}

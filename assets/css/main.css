@@ -1,72 +1,72 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 body {
-  color: #000000;
-  font-family: "Raleway", Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1.5;
-  letter-spacing: -0.005em; }
+	color: #000000;
+	font-family: "Raleway", Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1.5;
+	letter-spacing: -0.005em; }
 
 b,
 strong {
-  font-weight: bolder; }
+	font-weight: bolder; }
 
 small {
-  color: #1a1a1a;
-  font-size: 14px;
-  line-height: 1.18519;
-  letter-spacing: -0.00444em; }
+	color: #1a1a1a;
+	font-size: 14px;
+	line-height: 1.18519;
+	letter-spacing: -0.00444em; }
 
 a {
-  color: #a4572c;
-  cursor: pointer;
-  text-decoration: none;
-  background: transparent; }
-  a:hover {
-    color: #834623; }
-  a:active, a:hover {
-    outline: 0; }
+	color: #a4572c;
+	cursor: pointer;
+	text-decoration: none;
+	background: transparent; }
+	a:hover {
+		color: #834623; }
+	a:active, a:hover {
+		outline: 0; }
 
 h1, h2, h3 {
-  font-family: "Playfair Display", Georgia, serif;
-  color: #9A4414; }
+	font-family: "Playfair Display", Georgia, serif;
+	color: #9A4414; }
 
 h4, h5, h6 {
-  font-family: "Raleway", Helvetica, sans-serif; }
+	font-family: "Raleway", Helvetica, sans-serif; }
 
 h1 {
-  font-size: 32px;
-  line-height: 1.5;
-  letter-spacing: -0.01014em; }
+	font-size: 32px;
+	line-height: 1.5;
+	letter-spacing: -0.01014em; }
 
 h2 {
-  font-size: 29px;
-  line-height: 1.5;
-  letter-spacing: -0.00901em; }
+	font-size: 29px;
+	line-height: 1.5;
+	letter-spacing: -0.00901em; }
 
 h3 {
-  font-size: 20px;
-  line-height: 1.5;
-  letter-spacing: -0.00633em; }
+	font-size: 20px;
+	line-height: 1.5;
+	letter-spacing: -0.00633em; }
 
 h4 {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.18519;
-  letter-spacing: -0.005em; }
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.18519;
+	letter-spacing: -0.005em; }
 
 h5 {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.18519;
-  letter-spacing: -0.00444em; }
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.18519;
+	letter-spacing: -0.00444em; }
 
 h6 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.18519;
-  letter-spacing: -0.00395em; }
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.18519;
+	letter-spacing: -0.00395em; }
