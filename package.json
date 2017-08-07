@@ -15,6 +15,7 @@
   "homepage": "https://github.com/williamdingwall/portfolio-metalsmith#readme",
   "dependencies": {
     "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
     "gulp-sass": "^3.1.0",
     "handlebars": "^4.0.10",
     "handlebars-layouts": "^3.1.4",
