@@ -42,9 +42,13 @@ $cu-middleground:         scaleColor($wd-grey, 10) !default;
 $cu-middleground--light:  scaleColor($wd-grey, 10) !default;
 $cu-middleground--dark:   scaleColor($wd-grey, 10) !default;
 
-$cu-background:           scaleColor($wd-black, 8) !default;
-$cu-background--light:    scaleColor($wd-black, 8) !default;
-$cu-background--dark:     scaleColor($wd-black, 8) !default;
+$cu-background:           scaleColor($wd-black, 0) !default;
+$cu-background--light:    scaleColor($wd-black, 0) !default;
+$cu-background--dark:     scaleColor($wd-black, 0) !default;
+
+$cu-divider:               scaleColor($wd-grey, 0) !default;
+$cu-divider--light:        scaleColor($wd-grey, 0) !default;
+$cu-divider--dark:         scaleColor($wd-grey, 0) !default;
 
 $cu-primary:                             $wd-brown !default;
 $cu-primary--light:     scaleColor($cu-primary, 1) !default;
@@ -53,7 +57,7 @@ $cu-primary--bg:       scaleColor($cu-primary, 10) !default;
 
 $cu-info:                                $wd-black !default;
 $cu-info--light:           scaleColor($cu-info, 1) !default;
-$cu-info--dark:           scaleColor($cu-info, -2) !default;
+$cu-info--dark:            scaleColor($cu-info, 0) !default;
 $cu-info--bg:             scaleColor($cu-info, 10) !default;
 
 // * 1.a Spot Colors (link, facebook, twitter, etc.)
@@ -75,6 +79,7 @@ $tu-raleway-fontFamily: 'Raleway', Helvetica, sans-serif !default;
 // * 2.b Font Weights
 
 $tu-base-fontWeight:      400 !default;
+$tu-semibold-fontWeight:  600 !default;
 $tu-bold-fontWeight:      700 !default;
 
 // * 2.c Font Sizes
@@ -106,7 +111,7 @@ $tu-large-lineHeight:         scaleFont($lineHeight, 2) !default;
 $su-xxsmall:   scaleGrid(.25) !default; // 2px
 $su-xsmall:     scaleGrid(.5) !default; // 4px
 $su-small:       scaleGrid(1) !default; // 8px
-$su-default:     scaleGrid(2) !default; // 16px
+$su-medium:      scaleGrid(2) !default; // 16px
 $su-large:       scaleGrid(3) !default; // 24px
 $su-xlarge:      scaleGrid(4) !default; // 32px
 $su-xxlarge:     scaleGrid(5) !default; // 40px
@@ -125,3 +130,27 @@ $breakpoints: (
 // * 5. Transitions
 
 $duration-short: 250ms;
+
+// * 5. Borders
+
+$border-radius-small:  scaleGrid(-2) !default; // 2px
+$border-radius-medium: scaleGrid(-1) !default; // 4px
+$border-radius-large:   scaleGrid(1) !default; // 8px
+
+$border-width-small:   scaleGrid(-3) !default; // 1px
+$border-width-medium:  scaleGrid(-2) !default; // 2px
+$border-width-large:   scaleGrid(-1) !default; // 4px
+
+// * 6. Transitions
+
+$duration-short: 250ms;
+
+// * 7. Box Shadows
+
+$box-shadow-small:  0 0 2px $cu-divider !default;
+$box-shadow-medium: 0 0 4px $cu-divider !default;
+$box-shadow-large:  0 0 6px $cu-divider !default;
+
+$inset-box-shadow-small:  1px 1px 1px $cu-divider--light inset !default;
+$inset-box-shadow-medium: 1px 1px 2px $cu-divider--light inset !default;
+$inset-box-shadow-large:  1px 1px 3px $cu-divider--light inset !default;

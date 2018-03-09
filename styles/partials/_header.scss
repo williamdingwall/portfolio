@@ -1,0 +1,40 @@
+$navHeight: scaleGrid(11);
+
+#Intro {
+  background-image: url('../img/trees_bg.jpg');
+  padding-top: $navHeight;
+}
+
+.SiteNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: $navHeight;
+  width: 100%;
+  background-color: rgba($cu-foreground, .85);
+  border-bottom: 1px solid $cu-divider--light;
+}
+
+.SiteNav-title,
+.SiteNav-link {
+  color: $cu-info;
+}
+
+.SiteNav-title,
+.SiteNav-link,
+.SiteNav-links {
+  height: $navHeight;
+  line-height: $navHeight;
+}
+
+.SiteNav-links {
+  li {
+    display: inline-block;
+    list-style: none;
+  }
+}
+
+.SiteNav-link {
+  font-family: $tu-playFair-fontFamily;
+  display: block;
+}

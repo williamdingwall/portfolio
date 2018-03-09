@@ -5,7 +5,8 @@ var Metalsmith = require('metalsmith'),
     markdown = require('metalsmith-markdown'),
     collections = require('metalsmith-collections'),
     permalinks = require('metalsmith-permalinks'),
-    layouts = require('metalsmith-layouts');
+    layouts = require('metalsmith-layouts'),
+    watch = require('metalsmith-watch');
 
 Metalsmith(__dirname)
     .metadata({
@@ -22,7 +23,7 @@ Metalsmith(__dirname)
       },
       posts: {
         pattern: 'posts/**/*.md',
-        sortBy: 'order',
+        sortBy: 'date',
         reverse: true
       }
     }))
@@ -46,6 +47,17 @@ Metalsmith(__dirname)
       destination: './'
     }))
     .destination('./build')
+    .use(
+      watch({
+        paths: {
+          "${source}/**/*": true,
+          "styles/**/*": "**/*",
+          "layouts/**/*": "**/*",
+          "content/**/*": "**/*",
+        },
+        livereload: true,
+      })
+    )
     .build(function(err, files) {
       if (err) throw err;
       else console.log('Success!! Portfolio Built');
