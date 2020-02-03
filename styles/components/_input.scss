@@ -1,0 +1,46 @@
+//------------------------------------------------------------//
+
+// * Input
+// * 1. Input Settings
+// * 2. Base Input
+
+// Notes:
+// * all the classic element styling is coming through
+
+// TODO : Refactor classic form styling to resolve conflicts
+
+//------------------------------------------------------------//
+
+// * 1. Input Settings
+
+$form-input-height: $su-xlarge !default;
+$form-input-line-height: $su-xlarge - 2 !default;
+$form-input-bg-color: $cu-foreground--dark !default;
+
+// * 2. Base Input
+
+.Input {
+  cursor: text;
+  display: block;
+  width: 100%;
+  height: $form-input-height;
+  line-height: $form-input-line-height;
+  padding: 0 $su-small;
+  box-sizing: border-box;
+  box-shadow: $inset-box-shadow-medium;
+  background-color: $form-input-bg-color;
+  border: $border-width-small solid $cu-divider;
+  border-radius: $border-radius-medium;
+  font-family: inherit;
+  font-size: $tu-base-fontSize;
+
+  &:disabled {
+    background: $cu-middleground--dark;
+    color: $cu-divider;
+    cursor: not-allowed;
+  }
+
+  &::-ms-clear {
+    display: none;
+  }
+}

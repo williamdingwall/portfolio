@@ -1,5 +1,4 @@
 ---
-title: Portfolio
+title: Home
 layout: home.html
 ---
-Portfolio Content Here...

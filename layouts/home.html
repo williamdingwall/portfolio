@@ -1,12 +1,74 @@
-{{> header}}
+{{#> header}}
+  {{#*inline 'PageHeader'}}
+    <div class="Section-container Grid Grid--fit">
+      <div class="Grid-cell">
+        <h1>
+          <span>Craft</span>
+          <span>Design</span>
+          <span>+</span>
+          <span>Development</span>
+        </h1>
+      </div>
+      <div class="Grid-cell">
+        <ul class="FeatureCollections">
+          <li><a href="#">Identity Design</a></li>
+          <li><a href="#">UX / UI</a></li>
+          <li><a href="#">UI Devlopment</a></li>
+          <li><a href="#">Graphic Design</a></li>
+          <li><a href="#">Art & Photography</a></li>
+        </ul>
+      </div>
+    </div>
+  {{/inline}}
+{{/header}}
 
-    <h2>{{ title }}</h2>
-    {{{ contents }}}
+<section id="Portfolio" class="Section">
+  <div class="Section-content">
+    <div class="Section-container">
 
-    {{#each collections.posts}}
-      {{#if featured}}
-        {{> feature}}
-      {{/if}}
-    {{/each}}
+      <h2 class="Section-title">Portfolio</h2>
+
+      {{#each collections.identityDesign}}
+        {{#if featured}}
+          {{> feature}}
+        {{/if}}
+      {{/each}}
+
+      {{#each collections.uxUi}}
+        {{#if featured}}
+          {{> feature}}
+        {{/if}}
+      {{/each}}
+
+      {{#each collections.uiDevelopment}}
+        {{#if featured}}
+          {{> feature}}
+        {{/if}}
+      {{/each}}
+
+      {{#each collections.graphicDesign}}
+        {{#if featured}}
+          {{> feature}}
+        {{/if}}
+      {{/each}}
+
+      {{#each collections.artPhotography}}
+        {{#if featured}}
+          {{> feature}}
+        {{/if}}
+      {{/each}}
+
+    </div>
+  </div>
+</section>
+
+<section id="About" class="Section Section--withBackground">
+  <div class="Section-content">
+    <div class="Section-container">
+      <h2 class="Section-title">About</h2>
+    
+    </div>
+  </div>
+</section>
 
 {{> footer}}

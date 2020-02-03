@@ -1,0 +1,45 @@
+
+.Section {
+  background-color: $cu-foreground;
+  border-bottom: 1px solid $cu-divider;
+}
+
+.Section-content {
+  padding: $su-medium;
+}
+
+.Section-container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.Section--withBackground {
+  background-color: $cu-background;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  .Section-content {
+    position: relative;
+    background-color: rgba($cu-background, .85);
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: $su-small;
+      display: block;
+    }
+    &:before {
+      top: 0;
+      @include liner-gradient($cu-background, transparent, transparent)
+    }
+    &:after {
+      bottom: 0;
+      @include liner-gradient(transparent, $cu-background, transparent)
+    }
+  }
+
+}

@@ -1,0 +1,25 @@
+.PortfolioItem {
+  padding-bottom: $su-large;
+}
+
+.PortfolioItem-title {
+  color: $cu-info;
+}
+
+.PortfolioItem-collection {
+  color: $cu-primary;
+  &:before { 
+    content: '{ ';
+  }
+  &:after { 
+    content: ' }';
+  }
+}
+
+.PortfolioItem-blurb {
+
+}
+
+.PortfolioItem-image {
+
+}

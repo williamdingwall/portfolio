@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{site.name}}</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="/css/main.css" type="text/css" />
+    <script src="/js/index.js"></script>
+    <script src="http://localhost:35729/livereload.js"></script>
   </head>
+
   <body>
 
-  <header>
-    <h1>William Dingwall</h1>
-  </header>
+  <header class="Section Section--withBackground" id="Intro">
 
-  <div class="main-wrapper">
+    <nav class="SiteNav">
+      <div class="Section-container Grid Grid--fit">
+        <h1 class="SiteNav-title Grid-cell">
+          <a class="SiteNav-link" href="#Intro">William Dingwall</a>
+        </h1>
+        <ul class="SiteNav-links Grid-cell u-textRight">
+          <li>
+            <a class="SiteNav-link" href="#Portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a class="SiteNav-link" href="#About">About</a>
+          </li>
+          <li>
+            <a class="SiteNav-link" href="#Connect">Connect</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="Section-content">
+      {{#> PageHeader}}
+          {{this.title}}
+      {{/PageHeader}}
+    </div>
+
+  </header>
