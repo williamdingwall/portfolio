@@ -2,11 +2,13 @@
 
 var Metalsmith = require('metalsmith'),
     assets = require('metalsmith-assets'),
+    sass = require('metalsmith-sass'),
     markdown = require('metalsmith-markdown'),
     collections = require('metalsmith-collections'),
     permalinks = require('metalsmith-permalinks'),
     layouts = require('metalsmith-layouts'),
-    watch = require('metalsmith-watch');
+    watch = require('metalsmith-watch'),
+    serve = require('metalsmith-serve');
 
 Metalsmith(__dirname)
     .metadata({
@@ -15,14 +17,14 @@ Metalsmith(__dirname)
         description: "I build stuff"
       }
     })
-    .source('./content')
+    .source('./src')
     .use(markdown())
     .use(collections({
       pages: {
         pattern: '*.md'
       },
       posts: {
-        pattern: 'posts/**/*.md',
+        pattern: 'src/posts/**/*.md',
         sortBy: 'date',
         reverse: true
       }
@@ -33,7 +35,7 @@ Metalsmith(__dirname)
     }))
     .use(layouts({
       engine: 'handlebars',
-      directory: './layouts',
+      directory: './src/layouts',
       default: 'article.html',
       pattern: ["*/*/*html","*/*html","*html"],
       partials: {
@@ -43,21 +45,28 @@ Metalsmith(__dirname)
       }
     }))
     .use(assets({
-      source: './assets',
+      source: './src',
       destination: './'
+    }))
+    .use(sass({
+      outputDir: 'css/'
     }))
     .destination('./build')
     .use(
       watch({
         paths: {
           "${source}/**/*": true,
-          "styles/**/*": "**/*",
-          "layouts/**/*": "**/*",
-          "content/**/*": "**/*",
+          "src/scss/**/*": "**/*",
+          "src/layouts/**/*": "**/*",
+          "src/content/**/*": "**/*",
         },
         livereload: true,
       })
     )
+    .use(serve({
+      port: 8081,
+      verbose: true
+    }))
     .build(function(err, files) {
       if (err) throw err;
       else console.log('Success!! Portfolio Built');

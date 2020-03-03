@@ -32,6 +32,9 @@ $wd-black:                                 #000000 !default;
 $wd-grey:                                  #dddddd !default;
 $wd-white:                                 #ffffff !default;
 
+$playFair-fontFamily: 'Playfair Display', Georgia, serif !default;
+$raleway-fontFamily: 'Raleway', Helvetica, sans-serif !default;
+
 // * 1.a Color Utilities
 
 $cu-foreground:                          $wd-white !default;
@@ -72,17 +75,25 @@ $letterSpacing: -0.005em !default;
 
 // * 2.a Font Families
 
-$tu-playFair-fontFamily: 'Playfair Display', Georgia, serif !default;
+$base-font-family:    $raleway-fontFamily !default;
+$heading-font-family: $playFair-fontFamily !default;
 
-$tu-raleway-fontFamily: 'Raleway', Helvetica, sans-serif !default;
+// * 2.b Font Colors 
 
-// * 2.b Font Weights
+$base-font-color:         $cu-info !default;
+$heading-font-color:   $cu-primary !default;
+$light-font-color: $cu-info--light !default;
+
+$link-color:                  $cu-primary--light !default;
+$link-color--hover: scaleColor($link-color, -2) !default;
+
+// * 2.c Font Weights
 
 $tu-base-fontWeight:      400 !default;
 $tu-semibold-fontWeight:  600 !default;
 $tu-bold-fontWeight:      700 !default;
 
-// * 2.c Font Sizes
+// * 2.d Font Sizes
 
 $tu-xsmall-fontSize:           scaleFont($fontSize, -2) !default;
 $tu-small-fontSize:            scaleFont($fontSize, -1) !default;
@@ -91,7 +102,7 @@ $tu-large-fontSize:             scaleFont($fontSize, 2) !default;
 $tu-xlarge-fontSize:            scaleFont($fontSize, 5) !default;
 $tu-xxlarge-fontSize:           scaleFont($fontSize, 6) !default;
 
-// * 2.d Font Letter Spacing
+// * 2.e Font Letter Spacing
 
 $tu-xsmall-letterSpacing: scaleFont($letterSpacing, -2) !default;
 $tu-small-letterSpacing:  scaleFont($letterSpacing, -1) !default;
@@ -100,7 +111,7 @@ $tu-large-letterSpacing:   scaleFont($letterSpacing, 2) !default;
 $tu-xlarge-letterSpacing:  scaleFont($letterSpacing, 5) !default;
 $tu-xxlarge-letterSpacing: scaleFont($letterSpacing, 6) !default;
 
-// * 2.e Font Line Height
+// * 2.f Font Line Height
 
 $tu-small-lineHeight:        scaleFont($lineHeight, -2) !default;
 $tu-base-lineHeight:          scaleFont($lineHeight, 0) !default;
