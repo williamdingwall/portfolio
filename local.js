@@ -52,7 +52,22 @@ Metalsmith(__dirname)
       outputDir: 'css/'
     }))
     .destination('./build')
+    .use(
+      watch({
+        paths: {
+          "${source}/**/*": true,
+          "src/scss/**/*": "**/*",
+          "src/layouts/**/*": "**/*",
+          "src/content/**/*": "**/*",
+        },
+        livereload: true,
+      })
+    )
+    .use(serve({
+      port: 8081,
+      verbose: true
+    }))
     .build(function(err, files) {
       if (err) throw err;
-      else console.log('Success!! Portfolio Built');
+      else console.log('Success!! Start building!');
     });
