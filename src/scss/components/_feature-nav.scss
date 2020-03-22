@@ -19,39 +19,4 @@
     padding-left: $su-medium;
 }
 
-.IntroText {
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 60px;
-    font-style: italic;
-}
 
-.IntroText-design,
-.IntroText-development {
-    color: $wd-white;
-}
-
-.IntroText-craft,
-.IntroText-plus {
-    color: $cu-primary;
-}
-
-.IntroText-craft {
-    font-size: 40px;
-    display: inline-block;
-    border-bottom: 1px solid $cu-primary;
-    padding-bottom: $su-small;
-    margin-bottom: $su-medium;
-}
-
-.IntroText-design {
-    display: block;
-}
-
-.IntroText-plus {
-
-}
-
-.IntroText-development {
-
-}
