@@ -1,5 +1,10 @@
 $navHeight: scaleGrid(11);
 
+#Intro {
+  background-image: url('../img/trees_bg.jpg');
+  padding-top: $navHeight;
+}
+
 .SiteNav {
   position: absolute;
   top: 0;
