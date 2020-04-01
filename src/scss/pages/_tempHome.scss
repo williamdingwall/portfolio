@@ -18,9 +18,9 @@ body,
   .Icon {
     color: $wd-white;
     fill: $wd-white;
-    width: 1.5em;
-    height: 1.5em;
-    font-size: 1.5em;
+    width: 1.35em;
+    height: 1.35em;
+    font-size: 1.35em;
     vertical-align: middle;
     @include max-width('sm') {
       width: 1.15em;
@@ -92,7 +92,7 @@ body,
 .SocialMedia-item {
   list-style: none;
   display: inline-block;
-  padding: $su-small $su-medium;
+  padding: $su-small $su-small;
 }
 
 .u-textCenter {
