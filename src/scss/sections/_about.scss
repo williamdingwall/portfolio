@@ -1,0 +1,116 @@
+//------------------------------------------------------------//
+
+// * Home Page Introduction
+// * 1. Contents Grouping One
+// * 2. Contents Grouping Two
+//
+// Notes:
+// * none yet
+
+// TODO : Make About-title a modifier of section title
+
+//------------------------------------------------------------//
+
+// * 1. Contents Grouping One
+
+.About-title {
+  margin-bottom: $su-medium;
+
+  &:before,
+  &:after {
+    height: $su-xsmall;
+  }
+
+  &:after {
+    background-color: $cu-primary;
+  }
+
+  &:before {
+    right: auto;
+    left: scaleGrid(10);
+    width: 60%;
+    @include horizontal-gradient($wd-white, transparent, transparent);
+  }
+}
+
+.About-subtitle {
+  font-size: scaleFont($fontSize, 2);
+  color: $cu-info;
+  padding-bottom: $su-xsmall;
+}
+
+.About-experience {
+  border: $su-medium solid $cu-primary;
+  list-style: none;
+  padding: $su-small;
+  box-sizing: border-box !important;
+}
+
+.About-experienceItem {
+  position: relative;
+  text-align: center;
+  padding: scaleGrid(15) $su-small scaleGrid(4) $su-small;
+}
+
+.About-experienceYear,
+.About-experienceYearText,
+.About-experienceFocus {
+  font-family: $heading-font-family;
+  display: block;
+}
+
+.About-experienceYear {
+  font-size: scaleFont($fontSize, 16);
+  font-weight: light;
+  color: scaleColor($cu-primary, 8);
+  font-style: italic;
+  position: absolute;
+  top: scaleGrid(6);
+  line-height: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  sup {
+    font-size: 40%;
+    vertical-align: super;
+  }
+}
+
+.About-experienceYearText {
+  position: relative;
+  color: $cu-primary;
+  font-size: scaleFont($fontSize, 2);
+  z-index: 10;
+}
+
+.About-experienceFocus {
+  position: relative;
+  border-top: 1px solid $cu-divider;
+  padding-top: $su-small;
+  margin-top: $su-small;
+  font-size: scaleFont($fontSize, 2);
+  z-index: 10;
+}
+
+.SocialMedia {
+  padding: $su-xsmall 0 0 0;
+  margin: 0;
+}
+
+.SocialMedia-item {
+  list-style: none;
+  display: inline-block;
+  padding: $su-small;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  .Icon {
+    font-size: 1.25em;
+    width: 1.25em;
+    height: 1.25em;
+  }
+
+}

@@ -1,0 +1,81 @@
+//------------------------------------------------------------//
+
+// * Home Page Introduction
+// * 1. Intro Text
+// * 2. Services Offered
+//
+// Notes:
+// * none yet
+
+// TODO : oganize file
+
+//------------------------------------------------------------//
+
+// * 1. Intro Text
+
+.IntroText {
+  font-size: scaleFont($fontSize, 14);
+  font-weight: 400;
+  line-height: scaleFont($lineHeight, -3);
+  font-style: italic;
+  position: relative;
+}
+
+.IntroText-design,
+.IntroText-development {
+  color: $wd-white;
+}
+
+.IntroText-craft,
+.IntroText-plus {
+  color: $cu-primary;
+}
+
+.IntroText-design {
+  display: block;
+  position: relative;
+  padding-bottom: $su-medium;
+
+  &:after {
+    content: '';
+    background: $cu-primary;
+    @include horizontal-gradient(transparent, $cu-primary, $cu-primary);
+    display: block;
+    height: $su-xsmall;
+    width: 100%;
+    position: absolute;
+    bottom: 0 - $su-xxsmall;
+    left: 0;
+    opacity: 0.7;
+  }
+}
+
+.IntroText-plus {}
+
+.IntroText-development {}
+
+// * 2. Services Offered
+
+.FeatureCollections {
+  padding: $su-medium $su-large;
+  font-family: $heading-font-family;
+  font-size: scaleFont($fontSize, 3);
+  list-style: none;
+  background-color: rgba($wd-black, 0.35);
+  box-shadow: 0 0 $su-medium $wd-black inset;
+  border: {
+      color: rgba($cu-primary, 0.7);
+      width: $su-medium;
+      style: solid;
+      position: outside;
+  }
+}
+
+.FeatureCollections-item {
+  padding: 0 0 $su-xxsmall 0;
+}
+
+.FeatureCollections,
+.FeatureCollections-link {
+  color: $wd-white;
+}

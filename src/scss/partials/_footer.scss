@@ -1,0 +1,34 @@
+//------------------------------------------------------------//
+
+// * File Title
+// * 1. Contents Grouping One
+// * 2. Contents Grouping Two
+//
+// Notes:
+// * none yet
+
+// TODO : oganize file
+
+//------------------------------------------------------------//
+
+// * 1. Contents Grouping One
+
+#footer {
+  position: relative;
+}
+
+.footer-image {
+  width: 100%;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba($wd-black, 0.75);
+  color: $wd-white;
+  width: 100%;
+  padding: $su-small;
+  font-size: scaleFont($fontSize, -2);
+  box-sizing: border-box;
+}

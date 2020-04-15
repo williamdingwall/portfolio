@@ -25,8 +25,7 @@ Metalsmith(__dirname)
       },
       posts: {
         pattern: 'src/posts/**/*.md',
-        sortBy: 'date',
-        reverse: true
+        sortBy: 'date:desc'
       }
     }))
     .use(permalinks({
@@ -58,7 +57,9 @@ Metalsmith(__dirname)
           "${source}/**/*": true,
           "src/scss/**/*": "**/*",
           "src/layouts/**/*": "**/*",
-          "src/content/**/*": "**/*",
+          "src/img/**/*": "**/*",
+          "src/js/**/*": "**/*",
+          "src/posts/**/*": "**/*"
         },
         livereload: true,
       })

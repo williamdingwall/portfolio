@@ -1,11 +1,76 @@
+//------------------------------------------------------------//
+
+// * File Title
+// * 1. Contents Grouping One
+// * 2. Contents Grouping Two
+//
+// Notes:
+// * none yet
+
+// TODO : oganize file
+
+//------------------------------------------------------------//
+
+// * 1. Contents Grouping One
 
 .Section {
   background-color: $cu-foreground;
-  border-bottom: 1px solid $cu-divider;
+}
+
+.Section-title {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: $su-xlarge;
+
+  &:after {
+    content: '';
+    background-color: scaleColor($cu-primary, 6);
+    height: 1px;
+    width: 100%;
+    display: block;
+    top: 60%;
+    position: absolute;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 25%;
+    z-index: 10;
+    right: 0;
+    top: 60%;
+    position: absolute;
+    @include horizontal-gradient(transparent, $wd-white, transparent);
+  }
+
+}
+
+.Section-titleText {
+  display: inline-block;
+  padding: {
+    left: 0;
+    right: $su-small;
+    top: $su-small;
+    bottom: $su-small;
+  }
+  background: $wd-white;
+  z-index: 10;
+  position: relative;
+}
+
+.Section-title--subtitle {
+  color: $cu-info;
+  font-size: $tu-large-fontSize;
+
+  &:after {
+    content: '';
+    background-color: $cu-divider;
+  }
 }
 
 .Section-content {
-  padding: scaleGrid(10) $su-medium;
+  padding: scaleGrid(6) $su-medium;
 }
 
 .Section-container {
@@ -23,23 +88,31 @@
   
   .Section-content {
     position: relative;
-    background-color: rgba($cu-background, .85);
+    background-color: rgba($cu-background, .7);
     &:before, &:after {
       content: '';
       position: absolute;
       left: 0;
       width: 100%;
-      height: $su-small;
       display: block;
     }
     &:before {
+      @include vertical-gradient($cu-background, transparent, transparent);
+      height: scaleGrid(6);
+      opacity: 0.35;
       top: 0;
-      @include liner-gradient($cu-background, transparent, transparent)
     }
     &:after {
+      @include vertical-gradient(transparent, $cu-background, transparent);
+      height: 100%;
+      opacity: 0.75;
       bottom: 0;
-      @include liner-gradient(transparent, $cu-background, transparent)
     }
+  }
+
+  & .Section-container {
+    position: relative;
+    z-index: 10;
   }
 
 }

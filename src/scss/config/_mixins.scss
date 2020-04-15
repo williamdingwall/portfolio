@@ -1,6 +1,6 @@
 //------------------------------------------------------------//
 
-// * TeamSnap-UI Mixins
+// * Stencil Mixins
 // * 1. media-query()
 // * used to dynamically write namespaced classes per
 //   screen size; "sm" works on small screens and up.
@@ -87,25 +87,25 @@
 @mixin min-width($width) {
 
   @if $width == xs {
-    @media only screen and (min-width: $screen-xs) {
+    @media only screen and (min-width: $breakpoint-xs) {
       @content;
     }
   }
 
   @else if $width == sm {
-    @media only screen and (min-width: $screen-sm) {
+    @media only screen and (min-width: $breakpoint-sm) {
       @content;
     }
   }
 
   @else if $width == md {
-    @media only screen and (min-width: $screen-md) {
+    @media only screen and (min-width: $breakpoint-md) {
       @content;
     }
   }
 
   @else if $width == lg {
-    @media only screen and (min-width: $screen-lg) {
+    @media only screen and (min-width: $breakpoint-lg) {
       @content;
     }
   }
@@ -126,25 +126,25 @@
 @mixin max-width($width) {
 
   @if $width == xs {
-    @media only screen and (max-width: $screen-xs) {
+    @media only screen and (max-width: $breakpoint-xs) {
       @content;
     }
   }
 
   @else if $width == sm {
-    @media only screen and (max-width: $screen-sm) {
+    @media only screen and (max-width: $breakpoint-sm) {
       @content;
     }
   }
 
   @else if $width == md {
-    @media only screen and (max-width: $screen-md) {
+    @media only screen and (max-width: $breakpoint-md) {
       @content;
     }
   }
 
   @else if $width == lg {
-    @media only screen and (max-width: $screen-lg) {
+    @media only screen and (max-width: $breakpoint-lg) {
       @content;
     }
   }
@@ -156,10 +156,10 @@
 // * Example
 //
 //   .Component {
-//    @include clear;
+//    @include liner-gradient(startingColor, endingColor, defaultColor);
 //   }
 
-@mixin liner-gradient($from, $to, $default) {
+@mixin vertical-gradient($from, $to, $default) {
   background: $default;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr = $from, endColorstr = $to, GradientType = 0 );
   background: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
@@ -167,6 +167,16 @@
   background: -moz-linear-gradient(top, $from, $to);
   background: -o-linear-gradient(top, $from, $to);
   background: linear-gradient(to bottom, $from, $to);
+}
+
+@mixin horizontal-gradient($from, $to, $default) {
+  background: $default;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr = $from, endColorstr = $to, GradientType = 0 );
+  background: -webkit-gradient(linear, left top, right top, from($from), to($to));
+  background: -webkit-linear-gradient(left, $from, $to);
+  background: -moz-linear-gradient(left, $from, $to);
+  background: -o-linear-gradient(left, $from, $to);
+  background: linear-gradient(to right, $from, $to);
 }
 
 // * 5. clear()

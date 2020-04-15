@@ -1,8 +1,12 @@
-<div id="{{this.id}}" class="PortfolioItem Grid Grid--fit">
-  <div class="Grid-cell">
+<div id="{{this.id}}" class="PortfolioItem Grid Grid--fit u-flexAlignItemsCenter">
+  <div class="Grid-cell u-padRightMd">
     <h3 class="PortfolioItem-title">{{this.title}}</h3>
-    <h4 class="PortfolioItem-collection">{{this.collection_label}}</h4>
-    <p class="PortfolioItem-blurb">{{{this.blurb}}}</p>
+    <p class="PortfolioItem-blurb">
+      <b>{{this.collection_label}}</b>. {{this.blurb}}
+    </p>
+    {{#if this.project_link}}
+      <a class="PortfolioItem-behanceLink" href="{{this.project_link}}">View Project on Behance</a>
+      {{/if}}
   </div>
   <div class="Grid-cell">
     <img class="PortfolioItem-image" src="{{this.thumb}}" />
