@@ -24,7 +24,9 @@
     "metalsmith-permalinks": "^2.2.0",
     "metalsmith-sass": "^1.7.0",
     "metalsmith-serve": "0.0.7",
-    "metalsmith-watch": "^1.0.3"
+    "metalsmith-watch": "^1.0.3",
+    "tar": ">=2.2.2",
+    "minimist": ">=0.2.1"
   },
   "scripts": {
     "prestart": "npm install",
