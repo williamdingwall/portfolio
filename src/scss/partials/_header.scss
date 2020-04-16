@@ -1,4 +1,24 @@
+//------------------------------------------------------------//
+
+// * File Title
+// * 1. Contents Grouping One
+// * 2. Contents Grouping Two
+//
+// Notes:
+// * none yet
+
+// TODO : oganize file
+
+//------------------------------------------------------------//
+
+// * 1. Contents Grouping One
+
 $navHeight: scaleGrid(11);
+
+#Intro {
+  background-image: url('../img/trees_bg.jpg');
+  padding-top: $navHeight;
+}
 
 .SiteNav {
   position: absolute;
@@ -32,4 +52,12 @@ $navHeight: scaleGrid(11);
 .SiteNav-link {
   font-family: $heading-font-family;
   display: block;
+  margin-left: $su-medium;
+
+  .Icon {
+    font-size: 1.5em;
+    width: 1.5em;
+    height: 1.5em;
+  }
+
 }

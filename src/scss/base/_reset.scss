@@ -1,3 +1,18 @@
+//------------------------------------------------------------//
+
+// * File Title
+// * 1. Contents Grouping One
+// * 2. Contents Grouping Two
+//
+// Notes:
+// * none yet
+
+// TODO : oganize file
+
+//------------------------------------------------------------//
+
+// * 1. Contents Grouping One
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -12,9 +27,16 @@ footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {
     display:block;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+

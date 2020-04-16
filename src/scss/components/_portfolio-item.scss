@@ -1,25 +1,47 @@
+//------------------------------------------------------------//
+
+// * File Title
+// * 1. Contents Grouping One
+// * 2. Contents Grouping Two
+//
+// Notes:
+// * none yet
+
+// TODO : oganize file
+
+//------------------------------------------------------------//
+
+// * 1. Contents Grouping One
+
 .PortfolioItem {
-  padding-bottom: $su-large;
+  margin-bottom: $su-medium;
 }
 
-.PortfolioItem-title {
-  color: $cu-info;
-}
-
+.PortfolioItem-title,
 .PortfolioItem-collection {
+  display: inline-block;
+}
+
+.PortfolioItem-title{
+  color: $cu-info;
+  font-size: $tu-xlarge-fontSize;
+  border-bottom: 1px solid scaleColor($cu-primary, 6);
+  padding: 0 $su-small $su-small 0;
+  margin-bottom: $su-xlarge;
+}
+
+.PortfolioItem-behanceLink {
+  display: block;
   color: $cu-primary;
+  margin-top: $su-xlarge;
   &:before { 
-    content: '{ ';
+    content: '[ ';
   }
   &:after { 
-    content: ' }';
+    content: ' ]';
   }
 }
 
-.PortfolioItem-blurb {
+.PortfolioItem-blurb {}
 
-}
-
-.PortfolioItem-image {
-
-}
+.PortfolioItem-image {}

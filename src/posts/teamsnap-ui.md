@@ -1,12 +1,14 @@
 ---
-title: "TeamSnap UI"
-blurb: pint glass goblet alpha acid tulip glass. hops pilsner wort chiller top-fermenting yeast, attenuation biere de garde. hand pump, bittering hops pitch, brewing wheat beer glass, " final gravity." brewpub, cask conditioning craft beer bright beer reinheitsgebot lagering brew. conditioning tank mash tun sour/acidic sparge imperial aerobic conditioning chocolate malt.
-thumb: img/green-elephant.jpg
-collection: uiDevelopment
-collection_;abel: UI Development
+title: "Transforming TeamSnap"
+blurb: A 10% time project that spanned the length of my career at TeamSnap. When I started, the web app was a bit out dated to say the least and in dire need of a refresh. We needed a more component-driven approach. This is a breakdown of how to tackle a project of this scale from a design standpoint and how to do it without major company investment.
+thumb: img/TeamSnap_UI_cover.jpg
+collection: newWork
+collection_label: UI Design + Development, Visual Design
+project_link: https://www.behance.net/gallery/94695715/Transforming-TeamSnap
 featured: true
 layout: article.html
-date: 2017-08-08
+date: 2020-08-08
+order: 1
 ---
 
 content here
