@@ -1,9 +1,9 @@
 ---
 title: "More on the Way..."
-blurb: pint glass goblet alpha acid tulip glass. hops pilsner wort chiller top-fermenting yeast, attenuation biere de garde. hand pump, bittering hops pitch, brewing wheat beer glass, " final gravity." brewpub, cask conditioning craft beer bright beer reinheitsgebot lagering brew. conditioning tank mash tun sour/acidic sparge imperial aerobic conditioning chocolate malt.
+blurb: I'm currently in process of creating content for my site, going through years of projects to give in depth breakdowns of problems, process and outcomes. For now please enjoy some more from my past. Cheers!
 thumb: img/comng-soon.jpg
 collection: newWork
-collection_label: UX + UI
+collection_label: UX + UI design, identity design, visual design, graphic design, a little art, and a touch of photography
 featured: true
 layout: article.html
 date: 2021-08-06
