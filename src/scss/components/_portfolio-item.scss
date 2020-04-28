@@ -15,6 +15,13 @@
 
 .PortfolioItem {
   margin-bottom: $su-medium;
+
+  @include max-width('sm') {
+    border-bottom: 1px dotted $cu-divider;
+    padding-bottom: $su-medium;
+    margin-bottom: $su-large;
+  }
+
 }
 
 .PortfolioItem-title,
@@ -28,12 +35,23 @@
   border-bottom: 1px solid scaleColor($cu-primary, 6);
   padding: 0 $su-small $su-small 0;
   margin-bottom: $su-xlarge;
+
+  @include max-width('sm') {
+    font-size: scaleFont($fontSize, 3);
+    margin-bottom: $su-medium;
+  }
+
 }
 
 .PortfolioItem-behanceLink {
   display: block;
   color: $cu-primary;
   margin-top: $su-xlarge;
+
+  @include max-width('sm') {
+    margin-top: $su-medium;
+  }
+
   &:before { 
     content: '[ ';
   }

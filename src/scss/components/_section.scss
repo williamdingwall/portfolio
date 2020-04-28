@@ -22,6 +22,11 @@
   position: relative;
   margin-bottom: $su-xlarge;
 
+  @include max-width('sm') {
+    font-size: scaleFont($fontSize, 3);
+    margin-bottom: $su-large;
+  }
+
   &:after {
     content: '';
     background-color: scaleColor($cu-primary, 6);
@@ -71,6 +76,11 @@
 
 .Section-content {
   padding: scaleGrid(6) $su-medium;
+
+  @include max-width('sm') {
+    padding: scaleGrid(4) $su-medium;
+  }
+
 }
 
 .Section-container {

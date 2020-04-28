@@ -28,6 +28,11 @@ body {
   text-transform: none;
   line-height: $tu-base-lineHeight;
   letter-spacing: $tu-base-letterSpacing;
+
+  @include max-width('sm') {
+    font-size: $tu-small-fontSize;
+  }
+
 }
 
 b,
