@@ -42,7 +42,15 @@ $navHeight: scaleGrid(11);
   line-height: $navHeight;
 }
 
+.SiteNav-title {
+  @include max-width('sm') {
+    font-size: scaleFont($fontSize, 1);
+  }
+}
+
 .SiteNav-links {
+  padding-right: $su-medium;
+
   li {
     display: inline-block;
     list-style: none;
@@ -58,6 +66,13 @@ $navHeight: scaleGrid(11);
     font-size: 1.5em;
     width: 1.5em;
     height: 1.5em;
+
+    @include max-width('xs') {
+      font-size: 1.25em;
+      width: 1.25em;
+      height: 1.25em;
+    }
+
   }
 
 }

@@ -19,6 +19,20 @@
   line-height: scaleFont($lineHeight, -3);
   font-style: italic;
   position: relative;
+
+  @include max-width('lg') {
+    font-size: scaleFont($fontSize, 12);
+  }
+
+  @include max-width('sm') {
+    font-size: scaleFont($fontSize, 9);
+    font-style: normal;
+  }
+
+  @include max-width('xs') {
+    font-size: scaleFont($fontSize, 5);
+  }
+
 }
 
 .IntroText-design,
@@ -36,6 +50,10 @@
   position: relative;
   padding-bottom: $su-medium;
 
+  @include max-width('sm') {
+    display: inline-block;
+  }
+
   &:after {
     content: '';
     background: $cu-primary;
@@ -47,6 +65,11 @@
     bottom: 0 - $su-xxsmall;
     left: 0;
     opacity: 0.7;
+
+    @include max-width('sm') {
+      display: none;
+    }
+
   }
 }
 
@@ -69,6 +92,11 @@
       style: solid;
       position: outside;
   }
+
+  @include max-width('lg') {
+    font-size: scaleFont($fontSize, 2);
+  }
+
 }
 
 .FeatureCollections-item {
