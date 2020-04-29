@@ -1,10 +1,10 @@
 ---
 title: "Search Patterns"
-blurb: pint glass goblet alpha acid tulip glass. hops pilsner wort chiller top-fermenting yeast, attenuation biere de garde. hand pump, bittering hops pitch, brewing wheat beer glass, " final gravity." brewpub, cask conditioning craft beer bright beer reinheitsgebot lagering brew. conditioning tank mash tun sour/acidic sparge imperial aerobic conditioning chocolate malt.
-thumb: img/green-elephant.jpg
-collection: inProgress
-collection_label: UX + UI
-project_link: https://example.com/example/
+blurb: Our search experiences weren’t great to say the least. Our customers were telling us our search experiences where “intimidating and hard to use” and “it’s not always certain why some results show for certain certain searches”. Looking ahead at our product strategy, reporting and member management across multiple seasons were going to be a big focus moving forward. I view “search” as the backbone for both. This project focuses on two specific search implementations but we needed patterns that could influence our search experiences moving forward.
+thumb: img/portfolio_search_cover.jpg
+collection: newWork
+collection_label: UX + UI Design, Visual Design
+project_link: https://www.behance.net/gallery/94676739/TeamSnap-Member-Search
 featured: true
 layout: article.html
 date: 2017-08-06
