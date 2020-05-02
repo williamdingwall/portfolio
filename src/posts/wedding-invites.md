@@ -7,7 +7,8 @@ collection_label: Graphic Design, Print
 project_link: https://www.behance.net/gallery/94797663/Wedding-Invites
 featured: true
 layout: article.html
-date: 2017-10-06
+date: 2020-04-01
+order: 4
 ---
 
 content here

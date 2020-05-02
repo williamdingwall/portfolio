@@ -7,7 +7,8 @@ collection_label: UX + UI Design, Visual Design
 project_link: https://www.behance.net/gallery/94676739/TeamSnap-Member-Search
 featured: true
 layout: article.html
-date: 2017-08-06
+date: 2020-01-01
+order: 1
 ---
 
 content here
