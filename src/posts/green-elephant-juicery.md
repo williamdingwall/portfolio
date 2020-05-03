@@ -7,7 +7,7 @@ collection_label: Identity Design
 project_link: https://www.behance.net/gallery/96413669/Green-Elephant-Juicery
 featured: true
 layout: article.html
-date: 2020-02-01
+date: 2020-03-01
 order: 2
 ---
 

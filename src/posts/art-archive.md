@@ -7,7 +7,7 @@ collection_label: Art & Illustration
 project_link: https://www.behance.net/gallery/14090085/Art-Illustration-Archive-1
 featured: true
 layout: article.html
-date: 2013-08-08
+date: 2015-03-01
 ---
 
 content here
