@@ -7,7 +7,7 @@ collection_label: UI Design + Development, Visual Design
 project_link: https://www.behance.net/gallery/94695715/Transforming-TeamSnap
 featured: true
 layout: article.html
-date: 2020-03-01
+date: 2020-02-01
 order: 3
 ---
 
