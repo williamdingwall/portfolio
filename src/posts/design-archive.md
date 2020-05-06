@@ -7,7 +7,7 @@ collection_label: UI Design + Development, Visual Design, Graphic Design, Identi
 project_link: https://www.behance.net/gallery/14089499/Design-Archive-1
 featured: true
 layout: article.html
-date: 2020-03-01
+date: 2020-04-01
 ---
 
 content here
