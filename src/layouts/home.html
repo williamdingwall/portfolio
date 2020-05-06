@@ -15,8 +15,6 @@
           <li class="FeatureCollections-item">Visual Design</li>
           <li class="FeatureCollections-item">Identity Design</li>
           <li class="FeatureCollections-item">Graphic Design</li>
-          <li class="FeatureCollections-item">Art + Illustration</li>
-          <li class="FeatureCollections-item">Outdoor Photography</li>
         </ol>
       </div>
     </div>
@@ -30,16 +28,7 @@
       <h2 class="Section-title">
         <span class="Section-titleText">Portfolio</span>
       </h2>
-      {{#each collections.newWork}}
-        {{#if featured}}
-          {{> feature}}
-        {{/if}}
-      {{/each}}
-
-      <h2 class="Section-title Section-title--subtitle">
-        <span class="Section-titleText">Past Work</span>
-      </h2>
-      {{#each collections.oldWork}}
+      {{#each collections.portfolioWork}}
         {{#if featured}}
           {{> feature}}
         {{/if}}
