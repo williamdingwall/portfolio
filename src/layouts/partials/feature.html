@@ -1,6 +1,6 @@
 <div id="{{this.id}}" class="PortfolioItem Grid u-flexAlignItemsCenter u-flexRowReverse">
   <div class="Grid-cell u-sm-size1of2">
-    <a href="{{this.project_link}}">
+    <a href="{{this.project_link}}" target="_blank">
       <img class="PortfolioItem-image" src="{{this.thumb}}" />
     </a>
   </div>
@@ -10,7 +10,7 @@
       <b>{{this.collection_label}}.</b> {{this.blurb}}
     </p>
     {{#if this.project_link}}
-      <a class="PortfolioItem-behanceLink" href="{{this.project_link}}">View Project on Behance</a>
-      {{/if}}
+      <a class="PortfolioItem-behanceLink" href="{{this.project_link}}" target="_blank">View Project on Behance</a>
+    {{/if}}
   </div>
 </div>

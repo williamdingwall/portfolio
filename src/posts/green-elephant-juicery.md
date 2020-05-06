@@ -2,7 +2,7 @@
 title: "Green Elephant Juicery"
 blurb: Building a brand for a cold press juicery and restraunt in Vail Colorado. Was contracted to design their logo and give them the foundational pieces of their brand.
 thumb: img/green-elephant-cover-2.jpg
-collection: newWork
+collection: portfolioWork
 collection_label: Identity Design
 project_link: https://www.behance.net/gallery/96413669/Green-Elephant-Juicery
 featured: true
