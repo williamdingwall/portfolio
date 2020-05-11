@@ -1,0 +1,115 @@
+{{> headerHead}}
+<body id="{{id}}">
+{{> header}}
+
+<article class="Article">
+  <header class="Article-header">
+
+    <h1 class="Article-title">{{title}}</h1>
+
+    <div class="Grid">
+      
+      <div class="Grid-cell u-sm-size1of2">
+
+        <h3 class="Resume-title">
+          <span class="Resume-titleText">Summary</span>
+        </h3>
+        <div class="Grid">
+          <div class="Grid-cell u-padRightMd">
+            <p>I’m passionate about solving human centered problems in digital spaces. Absolutly love seeing my designs help a business grow or a make an individuals life easier. I'm a firm believer in collaboration, product thinking and component-driven design. I crave growth the most in my career. </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="Grid-cell u-sm-size1of2">
+
+        <ul class="Resume-experience Grid Grid--fit">
+          <li class="Resume-experienceItem Grid-cell">
+            <span class="Resume-experienceYear">5<sup>+</sup></span>
+            <span class="Resume-experienceYearText">Five Years</span>
+            <span class="Resume-experienceFocus">Product</span>
+          </li>
+          <li class="Resume-experienceItem Grid-cell">
+            <span class="Resume-experienceYear">8<sup>+</sup></span>
+            <span class="Resume-experienceYearText">Eight Years</span>
+            <span class="Resume-experienceFocus">Development</span>
+          </li>
+          <li class="Resume-experienceItem Grid-cell">
+            <span class="Resume-experienceYear">12<sup>+</sup></span>
+            <span class="Resume-experienceYearText">Twelve Years</span>
+            <span class="Resume-experienceFocus">Design</span>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <section class="Article-section Article-section--fullWidth">
+    <div class="Resume-skills u-padBottomXl Grid Grid--fit Grid--withGutter">
+      <div class="Grid-cell">
+        <h3>Skills</h3>
+        <ul>
+          <li>User Experience Design</li>
+          <li>User Interface Design</li>
+          <li>UI Development</li>
+          <li>Visual Design</li>
+          <li>Usability Testing</li>
+          <li>Identity Design</li>
+          <li>Graphic Design</li>
+          <li>A/B Testing</li>
+          <li>Art + Photography </li>
+        </ul>
+      </div>
+      <div class="Grid-cell">
+        <h3>Tools</h3>
+        <ul>
+          <li>Figma</li>
+          <li>Sketch + Invision</li>
+          <li>Adobe Creative Suite</li>
+          <li>HTML, CSS, Javascript</li>
+          <li>UserTesting</li>
+          <li>FullStory</li>
+          <li>Google Analytics</li>
+          <li>Customer Interviews</li>
+          <li>Dropbox Paper</li>
+          <li>Bear Notes</li>
+          <li>Pencil & Paper</li>
+          <li>React</li>
+        </ul>
+      </div>
+      <div class="Grid-cell">
+        <h3>Skills</h3>
+        <ul>
+          <li>UX Writing</li>
+          <li>Data Visualization</li>
+          <li>Process Implementation</li>
+          <li>Project Management</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="Experience Article-section">
+    <h2 class="Article-title">Experience</h2>
+    {{#each collections.workExperience}}
+      {{> experience}}
+    {{/each}}
+  </section>
+
+  <section class="Education Article-section">
+    <h2 class="Article-title">Education</h2>
+    {{#each collections.schoolExperience}}
+      {{> experience}}
+    {{/each}}
+  </section>
+
+</article>
+
+{{> footer}}
+
+</body>
+</html>

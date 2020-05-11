@@ -19,16 +19,12 @@
 
 .footer-image {
   width: 100%;
+  float: left;
 }
 
 .copyright {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: rgba($wd-black, 0.75);
-  color: $wd-white;
-  width: 100%;
-  padding: $su-small;
-  font-size: scaleFont($fontSize, -2);
-  box-sizing: border-box;
+  display: block;
+  padding: $su-medium;
+  padding-bottom: $su-xxlarge;
+  text-align: center;
 }

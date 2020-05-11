@@ -17,63 +17,6 @@
   background-color: $cu-foreground;
 }
 
-.Section-title {
-  overflow: hidden;
-  position: relative;
-  margin-bottom: $su-xlarge;
-
-  @include max-width('sm') {
-    font-size: scaleFont($fontSize, 3);
-    margin-bottom: $su-large;
-  }
-
-  &:after {
-    content: '';
-    background-color: scaleColor($cu-primary, 6);
-    height: 1px;
-    width: 100%;
-    display: block;
-    top: 60%;
-    position: absolute;
-  }
-
-  &:before {
-    content: '';
-    position: absolute;
-    height: 1px;
-    width: 25%;
-    z-index: 10;
-    right: 0;
-    top: 60%;
-    position: absolute;
-    @include horizontal-gradient(transparent, $wd-white, transparent);
-  }
-
-}
-
-.Section-titleText {
-  display: inline-block;
-  padding: {
-    left: 0;
-    right: $su-small;
-    top: $su-small;
-    bottom: $su-small;
-  }
-  background: $wd-white;
-  z-index: 10;
-  position: relative;
-}
-
-.Section-title--subtitle {
-  color: $cu-info;
-  font-size: $tu-large-fontSize;
-
-  &:after {
-    content: '';
-    background-color: $cu-divider;
-  }
-}
-
 .Section-content {
   padding: scaleGrid(6) $su-medium;
 
@@ -83,46 +26,24 @@
 
 }
 
-.Section-container {
-  max-width: 1300px;
-  width: 100%;
-  margin: 0 auto;
+
+.Section-title {
+  position: relative;
+  padding-bottom: $su-small;
+  margin-bottom: $su-xxlarge;
+
+  &:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: scaleGrid(7);
+    background-color: $cu-divider;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }
 
-.Section--withBackground {
-  background-color: $cu-background;
-  background-repeat: no-repeat;
-  background-position: left top;
-  background-size: cover;
-  background-attachment: fixed;
-  
-  .Section-content {
-    position: relative;
-    background-color: rgba($cu-background, .7);
-    &:before, &:after {
-      content: '';
-      position: absolute;
-      left: 0;
-      width: 100%;
-      display: block;
-    }
-    &:before {
-      @include vertical-gradient($cu-background, transparent, transparent);
-      height: scaleGrid(6);
-      opacity: 0.35;
-      top: 0;
-    }
-    &:after {
-      @include vertical-gradient(transparent, $cu-background, transparent);
-      height: 100%;
-      opacity: 0.75;
-      bottom: 0;
-    }
-  }
-
-  & .Section-container {
-    position: relative;
-    z-index: 10;
-  }
-
+.Section-container {
+  @include siteContainer;
 }

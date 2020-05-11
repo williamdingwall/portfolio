@@ -1,6 +1,6 @@
 ---
 title: Blog
-layout: posts.html
+layout: article.html
 ---
 
-Test blog content
+No blog posts yet

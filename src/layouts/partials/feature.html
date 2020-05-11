@@ -1,16 +1,9 @@
-<div id="{{this.id}}" class="PortfolioItem Grid u-flexAlignItemsCenter u-flexRowReverse">
-  <div class="Grid-cell u-sm-size1of2">
-    <a href="{{this.project_link}}" target="_blank">
-      <img class="PortfolioItem-image" src="{{this.thumb}}" />
-    </a>
-  </div>
-  <div class="Grid-cell u-sm-size1of2 u-sm-padRightMd">
-    <h3 class="PortfolioItem-title">{{this.title}}</h3>
-    <p class="PortfolioItem-blurb">
-      <b>{{this.collection_label}}.</b> {{this.blurb}}
-    </p>
-    {{#if this.project_link}}
-      <a class="PortfolioItem-behanceLink" href="{{this.project_link}}" target="_blank">View Project on Behance</a>
-    {{/if}}
-  </div>
+<div class="PortfolioItem Grid-cell u-sm-size1of2">
+  <a href="/{{path}}">
+    <img class="PortfolioItem-image" src="{{this.thumb}}" />
+  </a>
+  <p class="PortfolioItem-title">{{this.collection_label}}</p>
+  {{#if this.project_link}}
+    <a class="PortfolioItem-link" href="/{{path}}">View Project</a>
+  {{/if}}
 </div>

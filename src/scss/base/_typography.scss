@@ -29,10 +29,6 @@ body {
   line-height: $tu-base-lineHeight;
   letter-spacing: $tu-base-letterSpacing;
 
-  @include max-width('sm') {
-    font-size: $tu-small-fontSize;
-  }
-
 }
 
 b,
@@ -63,13 +59,16 @@ a {
 
 // * 3. Headings
 
-h1, h2, h3 {
+h1, h2 {
   font-family: $heading-font-family;
-  color: $cu-primary;
   font-weight: normal;
 }
 
-h4, h5, h6 {
+h1 {
+  color: $cu-primary;
+}
+
+h3, h4, h5, h6 {
   font-family: $base-font-family;
 }
 
@@ -99,7 +98,7 @@ h4 {
 }
 
 h5 {
-  font-size: $tu-small-fontSize;
+  font-size: $tu-base-fontSize;
   font-weight: $tu-bold-fontWeight;
   line-height: $tu-small-lineHeight;
   letter-spacing: $tu-small-letterSpacing;
@@ -110,4 +109,26 @@ h6 {
   font-weight: $tu-base-fontWeight;
   line-height: $tu-small-lineHeight;
   letter-spacing: $tu-xsmall-letterSpacing;
+}
+
+
+h2, h3 {
+  padding-bottom: $su-medium;
+  color: $cu-primary;
+}
+
+h1, h2, h3, h4, p {
+  font-weight: normal;
+}
+
+p, ul, ol {
+  padding-bottom: $su-medium;
+}
+
+ul, ol {
+  padding-left: $su-medium;
+}
+
+li {
+  padding: $su-xxsmall 0;
 }

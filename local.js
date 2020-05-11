@@ -38,9 +38,18 @@ Metalsmith(__dirname)
       default: 'article.html',
       pattern: ["*/*/*html","*/*html","*html"],
       partials: {
-        header: 'partials/header',
+        experience: 'partials/experience',
+        feature: 'partials/feature',
         footer: 'partials/footer',
-        feature: 'partials/feature'
+        header: 'partials/header',
+        headerHead: 'partials/header-head',
+        headerIntro: 'partials/header--intro',
+        headerNav: 'partials/header-navigation',
+        iconBehance: 'partials/icon-behance',
+        iconGithub: 'partials/icon-github',
+        iconLinkedin: 'partials/icon-linkedin',
+        iconPinterest: 'partials/icon-pinterest',
+        logo: 'partials/logo'
       }
     }))
     .use(assets({

@@ -14,7 +14,15 @@
 // * 1. Contents Grouping One
 
 .PortfolioItem {
-  margin-bottom: $su-medium;
+  margin-bottom: $su-large;
+
+  &:nth-child(2n + 1) {
+    padding-right: $su-large;
+  }
+
+  &:nth-child(2n) {
+    padding-left: $su-medium;
+  }
 
   @include max-width('sm') {
     border-bottom: 1px dotted $cu-divider;
@@ -29,21 +37,7 @@
   display: inline-block;
 }
 
-.PortfolioItem-title{
-  color: $cu-info;
-  font-size: $tu-xlarge-fontSize;
-  border-bottom: 1px solid scaleColor($cu-primary, 6);
-  padding: 0 $su-small $su-small 0;
-  margin-bottom: $su-xlarge;
-
-  @include max-width('sm') {
-    font-size: scaleFont($fontSize, 3);
-    margin-bottom: $su-medium;
-  }
-
-}
-
-.PortfolioItem-behanceLink {
+.PortfolioItem-link {
   display: block;
   color: $cu-primary;
   margin-top: $su-xlarge;
