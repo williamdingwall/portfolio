@@ -13,8 +13,8 @@
 // * 4. liner-gradient()
 // * simple gradient mixin. Should only be used very lightly
 // * in support of an image background; see registration.
-// * 5. clear()
-// * method for self clearing a parent with floated children
+// * 5. siteContainer()
+// * used for basic structuring of the site content
 
 // Notes:
 // * min-width / max-width may be included in newer Sass v3+
@@ -179,18 +179,36 @@
   background: linear-gradient(to right, $from, $to);
 }
 
-// * 5. clear()
+// * 5. siteContainer()
 
 // * Example
 //
 //   .Component {
-//    @include clear;
+//    @include siteContainer;
 //   }
 
-@mixin clear {
-  &:after {
-    content: '';
-    display: block;
-    clear: both;
+@mixin siteContainer {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+// * 6. articleTheme($color)
+
+@mixin articleTheme($spotColor) {
+
+  h1, h2, h3 {
+    color: $spotColor;
   }
+
+  .Reverse-text {
+    color: $cu-foreground;
+    background-color: $spotColor;
+
+    h1, h2, h3 {
+      color: $cu-foreground;
+    }
+
+  }
+
 }

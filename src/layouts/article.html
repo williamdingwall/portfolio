@@ -1,13 +1,16 @@
+{{> headerHead}}
+<body id="{{id}}">
 {{> header}}
 
-<h2>{{title}}</h2>
-
-<article>
-
+<article class="Article">
+  <header class="Article-header">
+    <h1>{{title}}</h1>
+    <p>{{collection_label}}</p>
+  </header>
   {{{contents}}}
-
-  <img src="{{this.thumb}}" />
-
 </article>
 
 {{> footer}}
+
+</body>
+</html>

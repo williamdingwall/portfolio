@@ -27,6 +27,11 @@
   display: none !important;
 }
 
+.u-centerBlock {
+  display: block !important;
+  margin: 0 auto;
+}
+
 // Completely remove from the flow but leave available to screen readers.
 
 .u-hiddenVisually {

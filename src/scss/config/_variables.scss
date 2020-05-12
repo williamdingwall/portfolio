@@ -58,10 +58,10 @@ $cu-primary--light:     scaleColor($cu-primary, 1) !default;
 $cu-primary--dark:     scaleColor($cu-primary, -2) !default;
 $cu-primary--bg:       scaleColor($cu-primary, 10) !default;
 
-$cu-info:                                $wd-black !default;
-$cu-info--light:           scaleColor($cu-info, 1) !default;
-$cu-info--dark:            scaleColor($cu-info, 0) !default;
-$cu-info--bg:             scaleColor($cu-info, 10) !default;
+$cu-info:                 scaleColor($wd-black, 1) !default;
+$cu-info--light:          scaleColor($wd-black, 4) !default;
+$cu-info--dark:           scaleColor($wd-black, 0) !default;
+$cu-info--bg:            scaleColor($wd-black, 10) !default;
 
 // * 1.a Spot Colors (link, facebook, twitter, etc.)
 
@@ -99,8 +99,8 @@ $tu-xsmall-fontSize:           scaleFont($fontSize, -2) !default;
 $tu-small-fontSize:            scaleFont($fontSize, -1) !default;
 $tu-base-fontSize:              scaleFont($fontSize, 0) !default;
 $tu-large-fontSize:             scaleFont($fontSize, 2) !default;
-$tu-xlarge-fontSize:            scaleFont($fontSize, 5) !default;
-$tu-xxlarge-fontSize:           scaleFont($fontSize, 6) !default;
+$tu-xlarge-fontSize:            scaleFont($fontSize, 6) !default;
+$tu-xxlarge-fontSize:           scaleFont($fontSize, 8) !default;
 
 // * 2.e Font Letter Spacing
 

@@ -1,0 +1,209 @@
+//------------------------------------------------------------//
+
+// * Home Page Introduction
+// * 1. Contents Grouping One
+// * 2. Contents Grouping Two
+//
+// Notes:
+// * none yet
+
+// TODO : Make Resume-title a modifier of section title
+
+//------------------------------------------------------------//
+
+// * 1. Contents Grouping One
+
+#Resume {
+  background-color: #fafafa;
+}
+
+.Resume-title {
+  margin-bottom: 0;
+  padding-bottom: $su-small;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: $su-small;
+
+  @include max-width('sm') {
+    font-size: scaleFont($fontSize, 3);
+  }
+
+  &:after {
+    content: '';
+    background-color: $cu-primary;
+    height: 1px;
+    width: 100%;
+    display: block;
+    top: 60%;
+    position: absolute;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 25%;
+    z-index: 10;
+    right: 0;
+    top: 60%;
+    position: absolute;
+    @include horizontal-gradient(transparent, $wd-white, transparent);
+  }
+
+  &:before {
+    right: auto;
+    left: scaleGrid(10);
+    width: 60%;
+    height: 1px;
+    @include horizontal-gradient($wd-white, transparent, transparent);
+
+    @include max-width('sm') {
+      left: scaleGrid(7);
+    }
+
+  }
+
+}
+
+.Resume-titleText {
+  display: inline-block;
+  padding: {
+    left: 0;
+    right: $su-small;
+    top: $su-small;
+    bottom: $su-small;
+  }
+  background: $wd-white;
+  z-index: 10;
+  position: relative;
+}
+
+.Resume-experience {
+  border: $su-medium solid $cu-primary;
+  list-style: none;
+  padding: $su-small;
+  box-sizing: border-box !important;
+}
+
+.Resume-experienceItem {
+  position: relative;
+  text-align: center;
+  padding: scaleGrid(15) $su-small scaleGrid(4) $su-small;
+}
+
+.Resume-experienceYear,
+.Resume-experienceYearText,
+.Resume-experienceFocus {
+  font-family: $heading-font-family;
+  display: block;
+}
+
+.Resume-experienceYear {
+  font-size: scaleFont($fontSize, 16);
+  font-weight: light;
+  color: scaleColor($cu-primary, 8);
+  font-style: italic;
+  position: absolute;
+  top: scaleGrid(6);
+  line-height: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  @include max-width('md') {
+    font-size: scaleFont($fontSize, 12);
+  }
+
+  sup {
+    font-size: 40%;
+    vertical-align: super;
+  }
+
+}
+
+.Resume-experienceYearText {
+  position: relative;
+  color: $cu-primary;
+  font-size: scaleFont($fontSize, 2);
+  z-index: 10;
+
+}
+
+.Resume-experienceFocus {
+  position: relative;
+  border-top: 1px solid $cu-divider;
+  padding-top: $su-small;
+  margin-top: $su-small;
+  font-size: scaleFont($fontSize, 2);
+  z-index: 10;
+}
+
+.Resume-experienceYearText,
+.Resume-experienceFocus {
+
+  @include max-width('md') {
+    font-size: $fontSize;
+  }
+
+}
+
+.Resume-skills {
+  background: #fafafa;
+  padding: $su-medium;
+
+  .Grid-cell {
+    padding: 0 $su-medium;
+  }
+
+  h3 {
+    border-bottom: 1px solid $cu-primary;
+  }
+
+  ul {
+    padding: $su-medium 0 0 0;
+    list-style: none;
+  }
+
+}
+
+.ExperienceItem {
+  padding-bottom: $su-xlarge;
+}
+
+.ExperienceItem-title {
+
+  @include min-width('sm') {
+    flex-basis: auto;
+    width: scaleGrid(35);
+  }
+
+  @include max-width('sm') {
+    padding-bottom: $su-xlarge;
+  }
+
+
+}
+
+.ExperienceItem-description {
+  @include min-width('sm') {
+    flex: 1 1 0%;
+    flex-basis: 0%;
+    flex-basis: 0%;
+  }
+}
+
+.ExperienceItem-role,
+.ExperienceItem-company,
+.ExperienceItem-duration,
+.ExperienceItem-location {
+  padding-bottom: $su-xsmall;
+}
+
+.ExperienceItem-duration,
+.ExperienceItem-location {
+  color: $cu-info--light;
+}
+
+.ExperienceItem-location {
+  font-style: italic;
+}

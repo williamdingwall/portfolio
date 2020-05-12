@@ -1,0 +1,70 @@
+//------------------------------------------------------------//
+
+// * File Title
+// * 1. Contents Grouping One
+// * 2. Contents Grouping Two
+//
+// Notes:
+// * none yet
+
+// TODO : oganize file
+
+//------------------------------------------------------------//
+
+// * 1. Contents Grouping One
+
+$spot-color: $cu-primary !default;
+
+.Article {
+  @include siteContainer;
+  background-color: $cu-foreground;
+  border: 1px solid $cu-divider;
+  margin-top: scaleGrid(8);
+
+}
+
+.Article-header,
+.Article-section,
+.Article-footer {
+  padding: scaleGrid(6) 5% 0 5%;
+}
+
+.Article-header {
+  padding-top: scaleGrid(7);
+  padding-bottom: 0;
+}
+
+.Article-section {
+  max-width: 1000px;
+}
+
+.Article-section--fullWidth {
+  max-width: 100%;
+}
+
+.Article-title {
+  position: relative;
+  padding-bottom: $su-small;
+  margin-bottom: $su-xxlarge;
+
+  &:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: scaleGrid(7);
+    background-color: $cu-divider;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.Article-image {
+  padding: $su-large 0;
+} 
+
+.Article-image--center {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+}

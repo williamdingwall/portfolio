@@ -11,13 +11,71 @@
 
 //------------------------------------------------------------//
 
+$introPadding: scaleGrid(8);
+
+#Intro {
+  background-color: $cu-background;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url('../img/trees_bg.jpg');
+  padding-top: $navHeight;
+
+  .SiteNav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba($cu-foreground, .85);
+  }
+
+  .Section-content {
+    position: relative;
+    padding-top: $introPadding;
+    padding-bottom: $introPadding;
+
+    @include max-width('sm') {
+      padding-top: $su-xlarge;
+      padding-bottom: $su-xlarge;
+    }
+
+    @include horizontal-gradient(rgba($cu-background, 0.8), transparent, transparent);
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      display: block;
+    }
+    &:before {
+      @include vertical-gradient(rgba($cu-background, 0.35), $cu-background, rgba($cu-background, 0.35));
+      height: 100%;
+      opacity: 0.8;
+      bottom: 0;
+    }
+    &:after {
+      @include vertical-gradient($cu-background, transparent, transparent);
+      height: scaleGrid(6);
+      opacity: 0.35;
+      top: 0;
+    }
+  }
+
+  & .Section-container {
+    position: relative;
+    z-index: 10;
+  }
+
+}
+
 // * 1. Intro Text
 
-.IntroText {
-  font-size: scaleFont($fontSize, 14);
+.IntroTitle {
+  font-size: scaleFont($fontSize, 10);
   font-weight: 400;
   line-height: scaleFont($lineHeight, -3);
-  font-style: italic;
+  padding-bottom: $su-medium;
+  margin-bottom: $su-medium;
   position: relative;
 
   @include max-width('lg') {
@@ -30,52 +88,44 @@
   }
 
   @include max-width('xs') {
-    font-size: scaleFont($fontSize, 5);
-  }
-
-}
-
-.IntroText-design,
-.IntroText-development {
-  color: $wd-white;
-}
-
-.IntroText-craft,
-.IntroText-plus {
-  color: $cu-primary;
-}
-
-.IntroText-design {
-  display: block;
-  position: relative;
-  padding-bottom: $su-medium;
-
-  @include max-width('sm') {
-    display: inline-block;
+    font-size: scaleFont($fontSize, 8);
   }
 
   &:after {
     content: '';
     background: $cu-primary;
-    @include horizontal-gradient(transparent, $cu-primary, $cu-primary);
+    @include horizontal-gradient($cu-primary, transparent, $cu-primary);
     display: block;
-    height: $su-xsmall;
+    height: $su-xxsmall;
     width: 100%;
     position: absolute;
     bottom: 0 - $su-xxsmall;
-    left: 0;
-    opacity: 0.7;
-
-    @include max-width('sm') {
-      display: none;
-    }
+    left: 0;  
 
   }
+
 }
 
-.IntroText-plus {}
+.IntroTitle-product,
+.IntroTitle-identity,
+.IntroText {
+  color: $wd-white;
+}
 
-.IntroText-development {}
+.IntroTitle-and {
+  color: $cu-primary;
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+.IntroTitle-product {
+  display: block;
+}
+
+.IntroTitle-and {}
+
+.IntroTitle-identity {}
+
 
 // * 2. Services Offered
 
