@@ -65,6 +65,13 @@ $navHeight: scaleGrid(11);
     display: inline-block;
     list-style: none;
   }
+
+  &.u-textRight {
+    @include max-width('sm') {
+      display: none;
+    }
+  }
+
 }
 
 .SiteNav-link {

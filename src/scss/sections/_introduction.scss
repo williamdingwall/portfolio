@@ -33,6 +33,12 @@ $introPadding: scaleGrid(8);
     position: relative;
     padding-top: $introPadding;
     padding-bottom: $introPadding;
+
+    @include max-width('sm') {
+      padding-top: $su-xlarge;
+      padding-bottom: $su-xlarge;
+    }
+
     @include horizontal-gradient(rgba($cu-background, 0.8), transparent, transparent);
     &:before, &:after {
       content: '';
@@ -82,7 +88,7 @@ $introPadding: scaleGrid(8);
   }
 
   @include max-width('xs') {
-    font-size: scaleFont($fontSize, 5);
+    font-size: scaleFont($fontSize, 8);
   }
 
   &:after {
@@ -94,11 +100,7 @@ $introPadding: scaleGrid(8);
     width: 100%;
     position: absolute;
     bottom: 0 - $su-xxsmall;
-    left: 0;
-
-    @include max-width('sm') {
-      display: none;
-    }
+    left: 0;  
 
   }
 
@@ -118,11 +120,6 @@ $introPadding: scaleGrid(8);
 
 .IntroTitle-product {
   display: block;
-
-  @include max-width('sm') {
-    display: inline-block;
-  }
-
 }
 
 .IntroTitle-and {}

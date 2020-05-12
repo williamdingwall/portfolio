@@ -34,13 +34,16 @@
 
 .PortfolioItem-title,
 .PortfolioItem-collection {
-  display: inline-block;
+  display: block;
+}
+
+.PortfolioItem-title {
+  font-size: $tu-large-fontSize;
 }
 
 .PortfolioItem-link {
   display: block;
   color: $cu-primary;
-  margin-top: $su-xlarge;
   font-weight: bolder;
 
   @include max-width('sm') {

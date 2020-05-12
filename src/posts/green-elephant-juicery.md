@@ -1,6 +1,6 @@
 ---
 title: "Green Elephant Juicery"
-blurb: Building a brand for a cold press juicery and restraunt in Vail Colorado. Was contracted to design their logo and give them the foundational pieces of their brand.
+intro: Building a brand for local juicery and restaurant in Vail, Colorado.
 thumb: img/green-elephant-cover-2.jpg
 collection: portfolioWork
 collection_label: Identity Design

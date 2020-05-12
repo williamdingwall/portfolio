@@ -26,7 +26,6 @@
 
   @include max-width('sm') {
     font-size: scaleFont($fontSize, 3);
-    margin-bottom: $su-large;
   }
 
   &:after {
@@ -172,14 +171,25 @@
 }
 
 .ExperienceItem-title {
-  flex-basis: auto;
-  width: scaleGrid(35);
+
+  @include min-width('sm') {
+    flex-basis: auto;
+    width: scaleGrid(35);
+  }
+
+  @include max-width('sm') {
+    padding-bottom: $su-xlarge;
+  }
+
+
 }
 
 .ExperienceItem-description {
-  flex: 1 1 0%;
-  flex-basis: 0%;
-  flex-basis: 0%;
+  @include min-width('sm') {
+    flex: 1 1 0%;
+    flex-basis: 0%;
+    flex-basis: 0%;
+  }
 }
 
 .ExperienceItem-role,

@@ -1,6 +1,6 @@
 ---
 title: TeamSnap Design System
-blurb: A 10% time project that spanned the length of my career at TeamSnap. When I started, the web app was a bit out dated to say the least and in dire need of a refresh. We needed a more component-driven approach. This is a breakdown of how to tackle a project of this scale from a design standpoint and how to do it without major company investment.
+intro: Modernizing TeamSnap's web presence with a pattern-driven approach.
 thumb: img/TeamSnap_UI_cover.jpg
 collection: portfolioWork
 collection_label: UI Design + Development, Visual Design
