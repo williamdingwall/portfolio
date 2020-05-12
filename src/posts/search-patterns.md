@@ -126,6 +126,7 @@ Working with some of those outlined patterns I started building those up into va
 ![Search Cover](/../../img/search-patterns/compoun_search_one.jpg)
 ![Search Cover](/../../img/search-patterns/compound-search_two.jpg)
 ![Search Cover](/../../img/search-patterns/compound_search_three.jpg)
+![Search Cover](/../../img/search-patterns/UI-Kit_behance.jpg)
 
 [//]: # (End revers section)
 </div>
