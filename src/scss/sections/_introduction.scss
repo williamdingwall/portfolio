@@ -78,10 +78,6 @@ $introPadding: scaleGrid(8);
   margin-bottom: $su-medium;
   position: relative;
 
-  @include max-width('lg') {
-    font-size: scaleFont($fontSize, 12);
-  }
-
   @include max-width('sm') {
     font-size: scaleFont($fontSize, 9);
     font-style: normal;

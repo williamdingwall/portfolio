@@ -168,13 +168,14 @@
 
 .ExperienceItem {
   padding-bottom: $su-xlarge;
+  max-width: 900px;
 }
 
 .ExperienceItem-title {
 
   @include min-width('sm') {
     flex-basis: auto;
-    width: scaleGrid(35);
+    width: scaleGrid(41);
   }
 
   @include max-width('sm') {
@@ -197,6 +198,7 @@
 .ExperienceItem-duration,
 .ExperienceItem-location {
   padding-bottom: $su-xsmall;
+  padding-top: 0;
 }
 
 .ExperienceItem-duration,

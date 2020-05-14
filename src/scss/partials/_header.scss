@@ -34,7 +34,7 @@ $navHeight: scaleGrid(11);
 
 .SiteNav-title,
 .SiteNav-links {
-  padding-bottom: 0;
+  padding: 0;
 }
 
 .SiteNav-title,
@@ -60,6 +60,10 @@ $navHeight: scaleGrid(11);
 
 .SiteNav-links {
   padding-right: $su-medium;
+
+  &:last-child {
+    padding-right: 0;
+  }
 
   li {
     display: inline-block;

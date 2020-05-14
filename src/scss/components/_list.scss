@@ -1,0 +1,37 @@
+//------------------------------------------------------------//
+
+// * File Title
+// * 1. Contents Grouping One
+// * 2. Contents Grouping Two
+//
+// Notes:
+// * none yet
+
+// TODO : oganize file
+
+//------------------------------------------------------------//
+
+// * 1. Contents Grouping One
+
+ul, ol {
+  padding-bottom: $su-medium;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+}
+
+ul, ol {
+  padding-left: $su-medium;
+}
+
+li {
+  padding: $su-small 0;
+}
+
+
+.nostyle {
+  list-style: none;
+  padding: 0;
+}

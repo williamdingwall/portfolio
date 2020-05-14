@@ -69,7 +69,7 @@ $color-facebook:                           #3B5998 !default;
 
 // * 2. Typography
 
-$fontSize:          16px !default;
+$fontSize:          17px !default;
 $lineHeight:         1.5 !default;
 $letterSpacing: -0.005em !default;
 
@@ -98,8 +98,8 @@ $tu-bold-fontWeight:      700 !default;
 $tu-xsmall-fontSize:           scaleFont($fontSize, -2) !default;
 $tu-small-fontSize:            scaleFont($fontSize, -1) !default;
 $tu-base-fontSize:              scaleFont($fontSize, 0) !default;
-$tu-large-fontSize:             scaleFont($fontSize, 2) !default;
-$tu-xlarge-fontSize:            scaleFont($fontSize, 6) !default;
+$tu-large-fontSize:             scaleFont($fontSize, 3) !default;
+$tu-xlarge-fontSize:            scaleFont($fontSize, 5) !default;
 $tu-xxlarge-fontSize:           scaleFont($fontSize, 8) !default;
 
 // * 2.e Font Letter Spacing
