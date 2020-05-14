@@ -15,6 +15,18 @@
 
 @import "../config/index.scss";
 
+.u-textSmall {
+  font-size: $tu-small-fontSize;
+}
+
+.u-textMedium {
+  font-size: $tu-base-fontSize;
+}
+
+.u-textLarge {
+  font-size: $tu-large-fontSize;
+}
+
 /**
  * Horizontal text alignment
  */

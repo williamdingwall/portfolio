@@ -43,7 +43,6 @@ Metalsmith(__dirname)
         footer: 'partials/footer',
         header: 'partials/header',
         headerHead: 'partials/header-head',
-        headerIntro: 'partials/header--intro',
         headerNav: 'partials/header-navigation',
         iconBehance: 'partials/icon-behance',
         iconGithub: 'partials/icon-github',

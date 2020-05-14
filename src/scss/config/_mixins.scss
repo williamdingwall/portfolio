@@ -192,23 +192,3 @@
   width: 100%;
   margin: 0 auto;
 }
-
-// * 6. articleTheme($color)
-
-@mixin articleTheme($spotColor) {
-
-  h1, h2, h3 {
-    color: $spotColor;
-  }
-
-  .Reverse-text {
-    color: $cu-foreground;
-    background-color: $spotColor;
-
-    h1, h2, h3 {
-      color: $cu-foreground;
-    }
-
-  }
-
-}

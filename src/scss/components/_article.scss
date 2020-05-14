@@ -21,12 +21,22 @@ $spot-color: $cu-primary !default;
   border: 1px solid $cu-divider;
   margin-top: scaleGrid(8);
 
+  h3 {
+    padding: $su-medium 0;
+  }
+
+}
+
+.Article-container {
+  padding: scaleGrid(6) 5% 0 5%;
 }
 
 .Article-header,
 .Article-section,
 .Article-footer {
   padding: scaleGrid(6) 5% 0 5%;
+  max-width: 900px;
+  margin: 0 auto;;
 }
 
 .Article-header {
@@ -34,8 +44,10 @@ $spot-color: $cu-primary !default;
   padding-bottom: 0;
 }
 
-.Article-section {
-  max-width: 1000px;
+.Article-footer {
+  padding-bottom: scaleGrid(7);
+  padding-top: scaleGrid(4);
+  border-top: 1px solid $spot-color;
 }
 
 .Article-section--fullWidth {
@@ -60,11 +72,47 @@ $spot-color: $cu-primary !default;
 }
 
 .Article-image {
-  padding: $su-large 0;
+  padding-bottom: $su-large;
 } 
 
 .Article-image--center {
-  max-width: 80%;
-  display: block;
+  max-width: 900px;
   margin: 0 auto;
+}
+
+// * 6. articleTheme($color)
+
+@mixin articleTheme($spotColor) {
+
+  h1, h2, h3, h4,
+  .u-colorPrimary {
+    color: $spotColor;
+  }
+
+  blockquote {
+    border-color: $spotColor;
+  }
+
+  .Blockquote--centered {
+    &:before, &:after {
+      background-color: $spotColor;
+    }
+  }
+
+  .Article-footer {
+    border-top: 1px solid $spotColor;
+  }
+
+  .Reverse-text {
+    color: $cu-foreground;
+    background-color: $spotColor;
+
+    h1, h2, h3, h4 {
+      color: $cu-foreground;
+    }
+
+  }
+
+  
+
 }

@@ -64,10 +64,6 @@ h1, h2 {
   font-weight: normal;
 }
 
-h1 {
-  color: $cu-primary;
-}
-
 h3, h4, h5, h6 {
   font-family: $base-font-family;
 }
@@ -111,24 +107,27 @@ h6 {
   letter-spacing: $tu-xsmall-letterSpacing;
 }
 
-
-h2, h3 {
-  padding-bottom: $su-medium;
+h1, h2, h3, h4 {
   color: $cu-primary;
 }
 
-h1, h2, h3, h4, p {
-  font-weight: normal;
-}
-
-p, ul, ol {
+h2, h3, h4 {
   padding-bottom: $su-medium;
 }
 
-ul, ol {
-  padding-left: $su-medium;
+h1, h2, h3, p {
+  font-weight: normal;
 }
 
-li {
-  padding: $su-xxsmall 0;
+h4, h5, b {
+  font-weight: bold;
+}
+
+p {
+  padding-bottom: $su-medium;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
 }
