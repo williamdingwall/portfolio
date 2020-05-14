@@ -8,5 +8,4 @@ collection: workExperience
 layout: blank.html
 date: 2000-06-01
 ---
-
 Determined client needs and provided custom paintings while working side jobs and pursuing my my own art. Became adept at juggling projects.
