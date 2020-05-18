@@ -209,3 +209,11 @@
 .ExperienceItem-location {
   font-style: italic;
 }
+
+.Recomendations {
+  background-color: #fafafa;
+  max-width: 100%;
+  padding-top: scaleGrid(10);
+  padding-bottom: scaleGrid(10);
+  margin: scaleGrid(10) 5%;
+}

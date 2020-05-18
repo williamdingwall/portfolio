@@ -15,6 +15,47 @@
 
 #footer {
   position: relative;
+  @include siteContainer;
+
+  @include max-width('sm') {
+    padding: scaleGrid(2) 0;
+  }
+
+  @include min-width('sm') {
+    padding: scaleGrid(4) 0;
+  }
+
+  .List--dotSeperated {
+    li {
+      @include max-width('sm') {
+        display: block;
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .List--dotSeperated + .List--dotSeperated {
+    @include max-width('sm') {
+      border-top: 1px solid $cu-divider;
+      padding-top: $su-small;
+    }
+  }  
+
+}
+
+#home #footer {
+  background-color: #222;
+  max-width: 100%;
+
+  a {
+    color: #fff;
+  }
+
+  .Grid {
+    @include siteContainer;
+  }
 }
 
 .footer-image {
