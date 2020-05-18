@@ -35,3 +35,25 @@ li {
   list-style: none;
   padding: 0;
 }
+
+.List--dotSeperated {
+  list-style: none;
+
+  li {
+    display: inline-block;
+    padding-right: $su-small;
+
+    &:before {
+      content: '•';
+      display: inline-block;
+      padding-right: $su-small;
+      color: $cu-info--light;
+    }
+
+    &:first-child:before {
+      content: '';
+    }
+
+  }
+
+}

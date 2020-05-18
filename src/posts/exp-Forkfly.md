@@ -8,5 +8,4 @@ collection: workExperience
 layout: blank.html
 date: 2000-04-01
 ---
-
 Designed parts of their mobile app and web presence, as well as collaborated on copy writing. Got introduced to working with a product team.
