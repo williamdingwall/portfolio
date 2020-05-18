@@ -1,4 +1,15 @@
-{{> headerHead}}
+
+{{#> headerHead}}
+  {{#*inline 'metaData'}}
+
+  <meta property="og:title" content="{{title}}" />
+  <meta property="og:image" content="https://williamdingwall.com/{{this.thumb}}" />
+  <meta property="og:description" content="{{intro}}" />
+  <meta property="og:url" content="https://williamdingwall.com/{{path}}" />
+
+  {{/inline}}
+{{/headerHead}}
+
 <body id="{{id}}">
 {{> header}}
 
