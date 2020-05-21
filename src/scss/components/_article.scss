@@ -46,8 +46,10 @@ $spot-color: $cu-primary !default;
 
 .Article-footer {
   padding-bottom: scaleGrid(7);
-  padding-top: scaleGrid(4);
+  padding-top: scaleGrid(7);
+  margin-top: scaleGrid(4);
   border-top: 1px solid $spot-color;
+  max-width: 100%;
 }
 
 .Article-section--fullWidth {
@@ -80,12 +82,22 @@ $spot-color: $cu-primary !default;
   margin: 0 auto;
 }
 
+.figma_badge {
+  text-align: center;
+  display: block;
+  img {
+    margin: 0 auto;
+    max-width: scaleGrid(30);
+  }
+}
+
 // * 6. articleTheme($color)
 
 @mixin articleTheme($spotColor) {
 
   h1, h2, h3, h4,
-  .u-colorPrimary {
+  .u-colorPrimary,
+  .figma_badge {
     color: $spotColor;
   }
 

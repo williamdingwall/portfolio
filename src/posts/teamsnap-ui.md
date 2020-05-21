@@ -215,3 +215,11 @@ Lastly, implementing a process is hard and ultimately it comes down to finding p
 The designers and developers that took lead on parts like the initial UI kit and the current CSS and React component libraries. The ones who collaborated to best fit everything into the various code bases. QA specialists that reached out about questions regarding design patterns and especially the ones that advocated to others. Thanks to everyone who played a part in this project and the contributions not shown above.
 
 </div>
+
+<footer class="Article-footer u-textCenter">
+
+<blockquote class="Blockquote Blockquote--centered Blockquote--largeText u-spaceTopMd" style="margin: 0 auto;">
+This article is currently in progress please check back soon.
+</blockquote>
+
+</footer>

@@ -47,7 +47,7 @@ Our general product strategy moving forward is geared around bringing reporting 
 
 <blockquote class="Blockquote">The key thing to know about Anthony is he’s a volunteer, sports management is not his day job and he’s really only in it for his kids. <b>He doesn't have time for complexity</b>.</blockquote>
 
-Typically he’s trying to accomplish a few tasks here and there after work or on the weekends. So when he starts hitting snags because somethings hard to use, slow, cumbersome or just plain confusing, the drop off rates for that session skyrocket and the his satisfaction with the product plummets.
+Typically he’s trying to accomplish a few tasks here and there after work or on the weekends. So when he starts hitting snags because somethings hard to use, slow, cumbersome or just plain confusing, the drop off rates for that session skyrocket and his satisfaction with the product plummets.
 
 </div>
 
@@ -127,9 +127,9 @@ The current searches had much more than what was needed, making the experiences 
 
 1. Whether or not they were on a team was easily the most used
 2. Registration was next with about 45% of the searches
-3. Custom fields and a gender were next at around 10% usage
+3. Custom fields and gender were next at around 10% usage
 4. Name searching was getting some usage for individual actions
-5. Generally speaking there were multiple pieces of criteria were used
+5. Generally speaking there were multiple pieces of criteria used
 
 ### Qualitative Findings
 
@@ -140,17 +140,17 @@ Next started studying how people where interacting with the two search features 
 </figure>
 
 #### Positive Notes
-1. The upfront options lead to fast searches if the user was comfortable with it.
+1. The upfront options led to fast searches if the user was comfortable with it.
 2. There weren’t many invalid searches being created on the members tab search.
 
 #### Negative Notes
 
-1. We’re applying search criteria without any indication. This is likely the leading cause of confusion, because if someone searches for members on a team and doesn't notice that we automatically remove them then the system doesn't reflect their mental model of who is on the team. 
-2. Users read this as “I want to see this AND this AND this..” confusing it with "OR" logic. Once users get tripped up a common use pattern is to add more filters think ping that will widen the scope when in fact it does the opposite.
+1. We’re applying search criteria without any indication. This is likely the leading cause of confusion, because if someone searches for members on a team and doesn't notice that we automatically remove them from the ui, it doesn't reflect their mental model of who is on the team. 
+2. Users read this as “I want to see this AND this AND this..” confusing it with "OR" logic. Once users get tripped up, a common use pattern is to add more filters thinking that will widen the scope when in fact it does the opposite.
 3. The false “active” states add to the difficulty of reading the page. In user testing something noticed was that when people start hitting these dead ends and looking around at the UI to self correct, they really struggle to make sense of how it all ties together.
 4. Having them select an operator is added complexity and slows users down. Just another piece of complexity that really isn't needed. Users typically just glance over the option or notice it and skip.
 5. It’s so much smoother when they don’t need to deal with the search. More just a not the future, but if we can surface data as they need it, without forcing them to search, that would be the most ideal solution.
-6. The amount of options presented at once made it hard to find a starting point. On top of taking up so much space and pushing the actions below the fold, a lot of users in testing mentioned how scary, intimidating or overwhelming the search was to get started with.
+6. The amount of options presented at once made it hard to find a starting point. On top of taking up so much space and pushing the actions below the fold, a lot of users in testing mentioned how scary, intimidating or overwhelming the search was to get started with. This matched internal and customer feedback.
 
 <blockquote class="Blockquote Blockquote--centered Blockquote--largeText u-spaceTopMd">
 When one of the issues caused an invalid search, all the other issues were magnified as the user tried to evaluate the UI and self correct. Abandonment was the usual result.
@@ -186,13 +186,13 @@ Disconnecting first name from last and forcing them to change criteria was addin
   <img src="/../../img/search-patterns/interaction_comp_two.jpg" />
 </figure>
 
-A direct path to search based on first and last name was all 90% of our users needed, the other use cases were secondary. This option played to those needs.
+A direct path to search based on first and last name was all 90% of our users needed, the other use cases were secondary. This option played well to those needs.
 
 <figure class="Article-image u-padTopMd">
   <img src="/../../img/search-patterns/individual_comp_three.jpg" />
 </figure>
 
-The typeahead solution played to those same user needs but speed up the time to action by removing the need for search results and gave direct paths to users through the input. It also took away the need for intimating the search, removing one more extraneous click.
+The typeahead solution played to those same user needs but speed up the time to action by removing the need for search results and gave direct paths to users through the input. It also took away the need for initiating the search, removing one more extraneous click.
 
 <hr class="Divider--space u-padBottomNone" />
 
@@ -206,17 +206,17 @@ The typeahead solution played to those same user needs but speed up the time to 
   <img src="/../../img/search-patterns/compound_interction-comp.jpg" />
 </figure>
 
-Some other search patterns we looked at in FullStory and AppCues did follow this same query builder pattern and it can be powerful with the right user, problem though was that Anthony wasn't a power user. This pattern forces users to understand conditional logic, bringing all the complexity straight to the UI and doesn't allow for much guidance to a successful search. In this use case adding multiple teams greatly decreases the chances for search results since players the player would have to be on both teams. Adding OR logic would require some fairly complicated UI changes too, forcing us to introduce the idea of “logic groups”. Having to “add” criteria also added to the cumbersome nature of our searching.
+Some other search patterns we looked at in FullStory and AppCues did follow this same query builder pattern and it can be powerful with the right user, problem though was that Anthony wasn't a power user. This pattern forces users to understand conditional logic, bringing all the complexity straight to the UI and doesn't allow for much guidance to a successful search. In this use case adding multiple teams greatly decreases the chances for search results since players would have to be on both teams. Adding OR logic would require some fairly complicated UI changes too, forcing us to introduce the idea of “logic groups”. Having to “add” criteria also added to the cumbersome nature of our searching.
 
 <figure class="Article-image u-padTopMd">
   <img src="/../../img/search-patterns/compound_interction-comp_two.jpg" />
 </figure>
 
-This AirBnb style grouped search did a really nice job of hiding logic complexity, created really clean spaces to explain difficult concepts and converted options selected into human readable terms. Instead of asking users to piece together UI inputs we gave them easy to read text.
+This AirBnb style grouped search did a really nice job of hiding logic complexity, created really clean spaces to explain difficult concepts and converted options selected into human readable terms. Instead of asking users to piece together UI inputs, we gave them easy to read text.
 
 ### Defining Patterns
 
-Then talking those interaction studies and breaking the. Down into some basic patterns that can be re-applied in various ways. The two primary patterns of categorizing and condensing both play on Hick’s Law and the notion of reducing stimuli to give users clear and direct choices.
+Then taking those interaction studies and breaking them down into some basic patterns that can be re-applied in various ways. The two primary patterns of categorizing and condensing both play on Hick’s Law and the notion of reducing stimuli to give users clear and direct choices.
 
 #### Categorize
 
@@ -224,13 +224,13 @@ Then talking those interaction studies and breaking the. Down into some basic pa
   <img src="/../../img/search-patterns/patterns_catergorize.jpg" />
 </figure>
 
-The first thing that stood out when looking back at the different interactions compared to our current ones was the notion of categorizing search inputs as a way to guide them to successful searches. Ideally building around the most important piece of criteria then giving them the means to refine or change that initial search type. This can be expanded upon for complex segment builders by giving them categories to interact with.
+Categorizing search inputs was a great way to guide them to successful searches. Ideally building around the most important piece of criteria then giving them the means to refine or change that initial search type. This can be expanded upon for complex segment builders by giving them categories to interact with.
 
 <figure class="Article-image">
   <img src="/../../img/search-patterns/patterns_building.jpg" />
 </figure>
 
-And provided some guidance as to how this notion of categorizing search inputs builds up to satisfy varying complexity of needs. One being focused on a single input working up to four which combines multiple inputs.
+Some guidance as to how this notion of categorizing search inputs builds up to satisfy varying complexity of needs. One being focused on a single input working up to four which combines multiple inputs.
 
 #### Condense
 
@@ -238,12 +238,11 @@ And provided some guidance as to how this notion of categorizing search inputs b
   <img src="/../../img/search-patterns/patterns_condense.jpg" />
 </figure>
 
-Then condensing complex inputs into simplified singular ones. For example the combination of first, last and an operator name input into a single text input that combines the three. Stepped inputs like registration form, fee and option could also benefit from this approach; especially with a typeahead component.
-
+Then condensing complex inputs into simplified singular ones. For example the combing the first, last and an operator into a single text input that combines the three. Stepped inputs like registration form, fee and option could also benefit from this approach; especially with a typeahead component.
 
 ### Distilling Principles
 
-All this research is difficult to bring up in the the moment during a conversation to took a moment to distill it all down to some basic principles that tie back to the research and could easily be used as talking points. Standard UX laws are great to mention too, these are geared towards our specific situation and draw from the context given on our research and from past experiences.
+All this research is difficult to bring up in the the moment during a conversation so took a moment to distill it all down to some basic principles that tie back to the research and could easily be used as talking points. Standard UX laws are great to mention too, but these are geared towards our specific situation and draw from the context given on our research and from past experiences.
 
 <figure class="Article-image">
   <img src="/../../img/search-patterns/ux-principles.jpg" />
@@ -273,7 +272,9 @@ All this research is difficult to bring up in the the moment during a conversati
   <img src="/../../img/search-patterns/Members_final.jpg" />
 </figure>
 
-We decided the scope of the typeahed component was just too much and ultimately went with the simple input. We felt like that was still a big improvement and really wanted to learn how that smaller iteration improves user experience and if we even need the type ahead. Specifically we were looking at the time to action metric and drop off between search and action. Typeahead did a great job closing that gap, but we wanted to start with the smaller iteration and learn if that typeahead was needed.
+We decided the scope of the typeahed component was just too much and ultimately went with the simple input. We felt like that was still a big improvement and really wanted to learn how that smaller iteration improves user experience and if we even need the type ahead.
+
+> Typeahead did a great job closing that gap, but w wanted to start with the smaller iteration and learn how our changes effected the time to search and action metrics as well as drop off between search and action to see if type typeahead was needed.
 
 ### Rostering Tab
 
@@ -281,7 +282,9 @@ We decided the scope of the typeahed component was just too much and ultimately 
   <img src="/../../img/search-patterns/Rostering_final.jpg" />
 </figure>
 
-With rostering team they initially wanted to go with the old version of member tab since their was already a pattern in place on the old members tab. However, after walking through and breaking down the interactions of the new design with the team and comparing them to our goals we decided to move forward with the new pattern.
+With the rostering team they initially wanted to go with the old version of member tab style search since their was already a pattern in place previously. 
+
+> After walking through and breaking down the interactions of the new design with the team, comparing them to our goals, we decided to move forward with the new grouped pattern.
 
 </section>
 
@@ -295,7 +298,7 @@ With rostering team they initially wanted to go with the old version of member t
 
 ### Search UI Kit
 
-Even though we decided on the simplified version I still wanted to move forward with polishing the patterns so we had some of that design and research ready to go moving forward.
+Even though we decided on the simplified version I still wanted to move forward with polishing the patterns, so we had some of that design and research ready to go moving forward.
 
 <figure class="Article-image">
   <img src="/../../img/search-patterns/uI-kit.jpg" />
@@ -303,7 +306,7 @@ Even though we decided on the simplified version I still wanted to move forward 
 
 ### Future Usage
 
-Above dives more into the visual design of the components while below gets more into how those components can fit into our app in various ways.
+The UI kit dives more into the visual design of the components while below gets more into how those components can fit into our app in various ways.
 
 <figure class="Article-image">
   <img src="/../../img/search-patterns/future_usage.jpg" />
@@ -311,17 +314,17 @@ Above dives more into the visual design of the components while below gets more 
 
 </section>
 
-<footer class="Article-footer">
+<section class="Article-section">
 
 ### My Role
 
-* Lead Research in the qualitative, quantitative and competitor analysis
-* Lead design of both implementations as well as the patterns
-* Lead team discussions around choosing an option and worked with team on defining scope
+* Led Research for the qualitative, quantitative and competitor analysis to define requirements
+* Led design of both implementations as well as the patterns
+* Led team discussions around choosing an option and worked with team on defining scope
 
 ### Lessons Learned
 
-We didn’t have a lot of resources dedicated to setting up analytics so getting some of these numbers were difficult to do at scale, but measuring a small sample size through FullStory the number of bad searches had dropped to nearly nothing since we weren’t allowing it in the ui, which in term speed up time to results and ultimately time to action significantly. 
+We didn’t have a lot of resources dedicated to setting up analytics so getting some of these numbers were difficult to do at scale, but measuring a small sample size through FullStory the number of bad searches had dropped to nearly nothing since we weren’t allowing it in the UI, which in term speed up time to results and ultimately time to action significantly. 
 
 <blockquote>
 Providing patterns, principles, tasks and user metrics to tie our efforts back to worked well in leading discussions. It provided a focused and objective platform to speak on.
@@ -329,10 +332,17 @@ Providing patterns, principles, tasks and user metrics to tie our efforts back t
 
 ### Next Steps
 
-Continue to work on a metrics funnel so as we make updates to both the search and results to get a clear picture of the changes without manual monitoring. then directly correlating them back to larger product and business goals to try and put a dollar amount on our efforts as a team. The goal is to get it down to a formula of as x decreases, y increases by z.
+Continue to work on a metrics funnel so as we make updates to both the search and results, we get a clear picture of the changes effect without manual monitoring. Then directly correlating them back to larger product and business goals to try and put a dollar amount on our efforts as a team. The goal is to get it down to a formula of as x decreases, y increases by z.
 
-<figure class="Article-image">
+<figure class="Article-image u-padTopMd">
   <img src="/../../img/search-patterns/next_steps.jpg" />
 </figure>
 
+</section>
+
+<footer class="Article-footer">
+<a class="figma_badge" href="https://www.figma.com/file/IhYzCH8PprPUFOP2N6jyK3/TeamSnap-Search-Patterns?node-id=734%3A12319" target="_blank">
+<strong class="u-block u-padBottomMd">View the Project on Figma</strong>
+<img src="/../../img/figma_badge.png" />
+</a>
 </footer>
