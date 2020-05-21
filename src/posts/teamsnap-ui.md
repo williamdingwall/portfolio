@@ -216,9 +216,9 @@ The designers and developers that took lead on parts like the initial UI kit and
 
 </div>
 
-<footer class="Article-footer">
+<footer class="Article-footer u-textCenter">
 
-<blockquote class="Blockquote Blockquote--centered Blockquote--largeText u-spaceTopMd">
+<blockquote class="Blockquote Blockquote--centered Blockquote--largeText u-spaceTopMd" style="margin: 0 auto;">
 This article is currently in progress please check back soon.
 </blockquote>
 
