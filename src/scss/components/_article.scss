@@ -101,6 +101,10 @@ $spot-color: $cu-primary !default;
     color: $spotColor;
   }
 
+  .u-colorInfo {
+    color: $cu-info;
+  }
+
   blockquote {
     border-color: $spotColor;
   }

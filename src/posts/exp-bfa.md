@@ -8,4 +8,5 @@ collection: schoolExperience
 layout: blank.html
 date: 2000-03-01
 ---
-Bachelor of Fine Arts in graphic design and painting. Exhibited several times. Practiced peer reviews.
+
+<p>Bachelor of Fine Arts in graphic design and painting. Exhibited several times. Practiced peer reviews.</p>

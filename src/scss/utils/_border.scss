@@ -29,7 +29,7 @@ $border-style: 1px solid $cu-divider--light;
 }
 
 .u-borderNone {
-  border: 0;
+  border: 0 !important;
 }
 
 @each $name, $value in $borders {
