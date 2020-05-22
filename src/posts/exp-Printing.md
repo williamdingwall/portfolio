@@ -8,4 +8,5 @@ collection: workExperience
 layout: blank.html
 date: 2000-07-01
 ---
-Managed projects preflight to distribution. Experienced the nitty-gritty of graphic design.
+
+<p>Managed projects preflight to distribution. Experienced the nitty-gritty of graphic design.</p>

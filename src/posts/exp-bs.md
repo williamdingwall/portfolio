@@ -8,4 +8,5 @@ collection: schoolExperience
 layout: blank.html
 date: 2000-02-01
 ---
-Studied Web Development & Design. Tutor for design, development and drawing. Deans list twice. Learned basic anatomy of the internet.
+
+<p>Studied Web Development & Design. Tutor for design, development and drawing. Deans list twice. Learned basic anatomy of the internet.</p>
