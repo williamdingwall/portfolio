@@ -82,6 +82,13 @@ $spot-color: $cu-primary !default;
   margin: 0 auto;
 }
 
+.Article-feature {
+  background-color: $cu-middleground;
+  border: 1px solid $cu-divider--light;
+  padding: $su-medium;
+  margin-bottom: $su-xxlarge;
+}
+
 .figma_badge {
   text-align: center;
   display: block;
