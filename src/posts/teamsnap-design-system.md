@@ -322,7 +322,7 @@ The team product leaned towards the light brand colors and open spacing for a mo
 </section>
 
 <figure class="Article-image Grid-cell u-padTopXxl">
-  <img class="u-centerBlock" src="/../../img/teamsnap-ui/ui-banner.jpg" />
+  <img class="u-centerBlock" src="/../../img/teamsnap-ui/TeamSnap_UI_Screens.jpg" />
 </figure>
 
 <section class="Article-section">
