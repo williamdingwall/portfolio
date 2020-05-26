@@ -313,7 +313,9 @@ All this research is difficult to bring up in the flow of a conversation so took
 
 The scope of the typeahed component was just too much and ultimately we went with a simple full name input, condensing the first name, last name and operator inputs from before. 
 
-> We felt like the quicker iteration was still a big improvement and really wanted to learn how it effected the time to search and action metrics as well as drop off between search and action, to see if type typeahead was needed.
+<blockquote class="Blockquote Blockquote--largeText Blockquote--centered u-spaceTopMd">
+We felt like the quicker iteration was still a big improvement and really wanted to learn how it effected the time to search and action metrics as well as drop off between search and action, to see if type typeahead was needed.
+</blockquote>
 
 ### Rostering Tab
 
@@ -321,9 +323,11 @@ The scope of the typeahed component was just too much and ultimately we went wit
   <img src="/../../img/search-patterns/Rostering_final.jpg" />
 </figure>
 
-With the rostering team they initially wanted to go with the old version of member tab style search, the query builder pattern, since their was already a code in place previously.
+With the rostering team they initially wanted to go with the old version of member tab style search, the query builder pattern, since their was already a code in place previously. They wanted to learn how that pattern would effect dropoff on the rostering tab as apposed to members tab.
 
-> After walking through and breaking down the interactions of the new design with the team, comparing them to our goals, we decided to invest in the new categorized search pattern.
+<blockquote class="Blockquote Blockquote--largeText Blockquote--centered u-spaceTopMd">
+After walking through and breaking down the interactions of the new design with the team, comparing them to our goals, we decided to invest in the new categorized search pattern.
+</blockquote>
 
 </section>
 
