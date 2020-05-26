@@ -277,8 +277,8 @@ All this research is difficult to bring up in the flow of a conversation so took
 1. <span class="u-block u-textLarge">Applied search criteria must have an indicator</span> otherwise users are starting with a false data set and we’re breaking their mental modal of the data from the start.
 2. <span class="u-block u-textLarge">Make applied search criteria human readable</span> So favor text strings over conditional logic and large groups of menu options so it takes less work to understand what criteria is applied.
 3. <span class="u-block u-textLarge">User intent should drive the design</span> Really consider the primary goal of the feature and how search facilitates that, then make it unique to that goal.
-4. <span class="u-block u-textLarge">Guide users to successful searches</span> By organizing inputs into categories we can help users enter better combinations of criteria and give them clearer paths in compound searches.
-5. <span class="u-block u-textLarge">Reduce complexity</span> By removing options they don’t need and condensing complex options we can limit the clicks needed as well as remove extraneous inputs that lead to invalid searches.
+4. <span class="u-block u-textLarge">Categorize inputs to guide users to successful searches</span> By organizing inputs into categories we can help users enter better combinations of criteria and give them clearer paths in compound searches.
+5. <span class="u-block u-textLarge">Condense inputs to remove complexity</span> By removing options they don’t need and condensing complex options we can limit the clicks needed as well as remove extraneous inputs that lead to invalid searches.
 6. <span class="u-block u-textLarge">The best search is one not needed</span> If we can just show the results they need, do it. Consider the overall flow the user is taking to get to specific information and look for patterns in common searches to define defaults and the overall experience around the search.
 
 </div>
