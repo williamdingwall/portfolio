@@ -270,7 +270,7 @@ All this research is difficult to bring up in the flow of a conversation so took
 
 <div class="Article-feature">
 
-<figure class="Article-image u-padBottomNone">
+<figure class="u-padBottomNone">
   <img src="/../../img/search-patterns/ux-principles.png" />
 </figure>
 

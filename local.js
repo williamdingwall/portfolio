@@ -48,7 +48,8 @@ Metalsmith(__dirname)
         iconGithub: 'partials/icon-github',
         iconLinkedin: 'partials/icon-linkedin',
         iconPinterest: 'partials/icon-pinterest',
-        logo: 'partials/logo'
+        logo: 'partials/logo',
+        photoswipe: 'partials/photoswipe'
       }
     }))
     .use(assets({

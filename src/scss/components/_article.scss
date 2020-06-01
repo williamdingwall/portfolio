@@ -75,6 +75,11 @@ $spot-color: $cu-primary !default;
 
 .Article-image {
   padding-bottom: $su-large;
+
+  img {
+    cursor: pointer;
+  }
+
 } 
 
 .Article-image--center {
