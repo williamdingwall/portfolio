@@ -9,4 +9,21 @@ layout: article.html
 date: 2021-08-06
 ---
 
-content here
+<section class="Article-section u-padBottomXl">
+
+<header>
+
+<h2 class="Section-title">Upcoming Project Breakdowns</h2>
+
+</header>
+
+* TeamSnap User OnBoarding
+* TeamSnap Payments & Registration
+* TeamSnap Households & Member Management
+* TeamSnap Rostering
+* The Denver Folklore Center
+* Design Archive
+* Photography
+* Art & Illustration
+
+</section>
