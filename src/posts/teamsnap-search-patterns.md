@@ -101,7 +101,7 @@ Two different teams I was on were updating the members and rostering tabs search
 
 ### Quantitative Findings
 
-Like any worthwhile design, it starts with research. In this case we pulled the numbers of how people were using the the two searches. The goal was to see if we could determine any intent. Based on some conversations with customers, our assumption was that members would be more specific, focused on finding individuals vs rostering which is more about building segments of users. That assumption proved out to be true, but we also got some really good info for setting scope and selecting what criteria was needed on which feature. 
+The goal was to see if we could determine any intent. Based on some conversations with customers, our assumption was that members would be more specific, focused on finding individuals vs rostering which is more about building segments of users. That assumption proved out to be true, but we also got some really good info for setting scope and selecting what criteria was needed on which feature. 
 
 > The current members search had much more than what was needed, adding the the user experiences being cumbersome and intimidating.
 
@@ -129,7 +129,7 @@ Like any worthwhile design, it starts with research. In this case we pulled the 
 
 ### Qualitative Findings
 
-Next started studying how people where interacting with the two search features through a combination of FullStory and unmoderated user testing, focusing a little more on rostering since it was the more complex one with more negative feedback. There were a handful of things that stood out, but these stood out the most.
+Next, started studying how people where interacting with the two search features through a combination of FullStory and unmoderated user testing, focusing a little more on rostering since it was the more complex one with more negative feedback. There were a handful of things that stood out, but these stood out the most.
 
 <figure class="Article-image">
   <img src="/../../img/search-patterns/Qualitative_findings_article.jpg" />
@@ -144,9 +144,9 @@ Next started studying how people where interacting with the two search features 
 1. We’re applying search criteria without any indication. This is likely the leading cause of confusion, because if someone searches for members on a team and doesn't notice that we automatically remove them from the ui, it doesn't reflect their mental model of who is on the team. 
 2. Users read this as “I want to see this AND this AND this..” confusing it with "OR" logic. Once users get tripped up, a common use pattern is to add more filters thinking that will widen the scope when in fact it does the opposite.
 3. The false “active” states add to the difficulty of reading the page. In user testing something noticed was that when people start hitting these dead ends and looking around at the UI to self correct, they really struggle to make sense of how it all ties together.
-4. Having them select an operator is added complexity and slows users down. Just another piece of complexity that really isn't needed. Users typically just glance over the option or notice it and skip.
-5. It’s so much smoother when they don’t need to deal with the search. More just a not the future, but if we can surface data as they need it, without forcing them to search, that would be the most ideal solution.
-6. The amount of options presented at once made it hard to find a starting point. On top of taking up so much space and pushing the actions below the fold, a lot of users in testing mentioned how scary, intimidating or overwhelming the search was to get started with. This matched internal and customer feedback.
+4. Having users select an operator is added complexity and slows them down. Just another piece of complexity that really isn't needed. Users typically just glance over the option or notice it and skip.
+5. The amount of options presented at once made it hard to find a starting point. On top of taking up so much space and pushing the actions below the fold, a lot of users in testing mentioned how scary, intimidating or overwhelming the search was to get started with. This matched internal and customer feedback.
+6. It’s so much smoother when they don’t need to deal with the search. More just a note for the future, but if we can surface data as they need it, without forcing them to search, that would be the most ideal solution.
 
 <blockquote class="Blockquote Blockquote--centered Blockquote--largeText u-spaceTopMd">
 When one of the issues caused an invalid search, all the other issues were magnified as the user tried to evaluate the UI and self correct. Abandonment was the usual result.
