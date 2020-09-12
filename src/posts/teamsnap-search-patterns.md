@@ -220,25 +220,29 @@ Then taking those interaction studies and breaking them down into some basic pat
   <img src="/../../img/search-patterns/patterns_catergorize.jpg" />
 </figure>
 
-Categorizing search inputs was a great way to guide them to successful searches. Ideally building around the most important piece of criteria then giving them the means to refine or change that initial search type. This can be expanded upon for complex segment builders by giving them categories to interact with.
+Categorizing search inputs was a great way to guide them to successful searches. Ideally building around the most important piece of criteria then giving them the means to refine or change that initial search type. This can be expanded upon for complex segment builders by giving them categories to interact with. Those categoriztions of search inputs builds can be built up to satisfy varying complexity of needs; ranging from a single input to many.
 
 <figure class="Article-image">
   <img src="/../../img/search-patterns/patterns_building.jpg" />
 </figure>
 
-Some guidance as to how this notion of categorizing search inputs builds up to satisfy varying complexity of needs. One being focused on a single input working up to four which combines multiple inputs.
+<blockquote class="Blockquote u-spaceBottomXl">Ideally when using multiple filter groups, card sorting would be used to either help determine those groupings or refine and validate the grouping we decided on.</blockquote>
+
+<figure class="Article-image">
+  <img src="/../../img/search-patterns/patterns_card-sorting.jpg" />
+</figure>
 
 #### Condense
+
+Finally complex inputs should be condensed into simplified singular ones. For example first, last and an operator into a single full name input. Stepped inputs like registration form, fee and option could also benefit from this approach; especially with a typeahead component.
 
 <figure class="Article-image">
   <img src="/../../img/search-patterns/patterns_condense.jpg" />
 </figure>
 
-Then condensing complex inputs into simplified singular ones. For example the combing the first, last and an operator into a single text input that combines the three. Stepped inputs like registration form, fee and option could also benefit from this approach; especially with a typeahead component.
-
 ### Search UI Kit
 
-To round out the visual design of the search components I put together a quick UI kit focusing on the visual design of the new patterns and how those components could fit into our app in different ways.
+To round out the visual design I worked on quick UI kit focusing on the visual design of the new patterns and how those components could fit into our app in different ways.
 
 <figure class="Article-image">
   <img src="/../../img/search-patterns/uI-kit.jpg" />
@@ -293,7 +297,7 @@ All this research is difficult to bring up in the flow of a conversation so took
 * <span class="u-block u-textLarge">Decrease Time to action</span> Serves as an indication of how connected the search is to the actual data.
 * <span class="u-block u-textLarge">Increase Valid searches</span> Provides insight as to how confusing the search is.
 
-<b>Hypothesis:</b> by targeting these user metrics we can decrease session dropoff and increase adoption; more so on rostering. The more we can improve key areas of member management the more we can increase our retention rate, increase booking numbers and overall profit.
+<b>Hypothesis:</b> by targeting these user metrics we can decrease session dropoff and increase adoption; more so on rostering. The more we can improve key areas of member management the more we can <b>increase our retention rate</b>, increase booking numbers and overall profit.
 
 </section>
 
