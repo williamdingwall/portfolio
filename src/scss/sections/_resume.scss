@@ -217,3 +217,24 @@
   padding-bottom: scaleGrid(10);
   margin: scaleGrid(10) 5%;
 }
+
+// TODO: when refactoring move this to a base component
+
+.Download-link {
+  border: 2px solid $cu-primary;
+  padding: $su-medium;
+  display: inline-block;
+
+  .Icon {
+    padding-right: $su-medium;
+  }
+
+  &:hover, &:active {
+    background: $cu-primary;
+    transition: all .25s ease-in-out;
+    &, .Icon {
+      color: $cu-foreground;
+    }
+  }
+
+}
