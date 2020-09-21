@@ -1,6 +1,6 @@
 ---
-title: "TeamSnap Onboarding"
-intro: Onboarding experiences for TeamSnap's enterprise app
+title: "TeamSnap Dashboard"
+intro: An onboarding experiences for TeamSnap's enterprise app
 thumb: img/dashboard/portfolio_dashboard_cover.jpg
 collection: portfolioWork
 collection_label: UX + UI Design, Visual Design
@@ -259,17 +259,16 @@ And finally to round out this first iteration the updated email provided more di
 * Write React, HTML and CSS for the parts of the the getting started panel and as space
 * Wrote Ruby, HTML and CSS for the tab reorder and no data screens on tabs
 
-### Measuring Success
-Measuring success was the biggest struggle on this project.
-
-### Next Steps
-* Continue updating and cleaning up the no data screens across the site
-* Continue mapping out customer journeys to refine specific onboarding experiences and usability in general
-* Investigate or be methods of user onboarding like in app release notes and personalization.
-
 </section>
 
 
 <footer class="Article-footer">
-
+  <div class="Grid">
+    <div class="Grid-Cell u-size1of1 u-sm-size1of2 u-textCenter">
+      <a class="figma_badge" href="https://projects.invisionapp.com/freehand/document/RkvEijVl7" target="_blank">
+      <strong class="u-block u-padBottomMd">View the Project on Invision</strong>
+      <img src="/../../img/invision_badge.png" />
+      </a>
+    </div>
+  </div>
 </footer>
