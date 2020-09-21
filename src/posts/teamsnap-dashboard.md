@@ -1,6 +1,6 @@
 ---
-title: "TeamSnap Onboarding"
-intro: Onboarding experiences for TeamSnap's enterprise app
+title: "TeamSnap Dashboard"
+intro: An onboarding experiences for TeamSnap's enterprise app
 thumb: img/dashboard/portfolio_dashboard_cover.jpg
 collection: portfolioWork
 collection_label: UX + UI Design, Visual Design
@@ -131,9 +131,11 @@ When comparing notes from the journey mapping session to the UI it was really ea
   <img src="/../../img/dashboard/Impact-graph.jpg" />
 </figure>
 
-When looking over some of the recommendations covered in the journey map we started weighing on an impact scale with onboarding and reporting being the primary factors for assessing impact. We decided to move forward with a few ideas but the primary was to build an org level dashboard that could both help new users get started with the product and give seasoned users a space to see a consolidated overview of key org functions.
+When looking over some of the recommendations covered in the journey map we started weighing them against each other with onboarding and reporting being the primary factors for assessing impact. 
 
-> Ideally we would follow up with customer interviews and/or analytics to validate and gain deeper insights into user behaviors, desired tasks and struggles, but in this case we felt the secondary knowledge was sufficient enough to get started and we could validate further in production.
+<blockquote class="Blockquote Blockquote--centered Blockquote--largeText u-spaceBottomXl">
+We decided to move forward with a few ideas but the primary was to build an org level dashboard that could both help new users get started with the product and give seasoned users a space to see a consolidated overview of key org functions.
+</blockquote>
 
 </section>
 
@@ -220,32 +222,27 @@ Everyone jumped in and contributed where they could to meet the goal.  Backend d
 
 <section class="Article-section">
 
-<header>
-
-## Rounding Out Iteration One
-With the dashboard work coming to an end, I started going back and knocking out some of the smaller projects like reordering the tabs and creating more helpful no data screens, then paired with our marketing designer to revamp the email.
+## Rounding Out the Dashboard
+With the dashboard work coming to an end, I started going back and knocking out some of the smaller projects that played off of and enanced the dashboard changes. For example paring with marketing to update the email to provide more direct entries into specific tasks, then update the screens they landed on had much more contextual help to get them going.
 
 <figure class="Article-image">
-  <figcaption class="u-padBottomMd">Reorganizing Our Tabs Around a Setup Flow</figcaption>
-  <img src="/../../img/dashboard/New-Site-Arch.jpg" />
-</figure>
-
-With the new tab organization we decided to follow a general flow of “being people in”, “organize them on teams” and “run the day to day operations”.
-
-<figure class="Article-image">
-  <figcaption class="u-padBottomMd">Updating the onboarding email and no data screens</figcaption>
   <img src="/../../img/dashboard/new-onboarding-email-no-data.jpg" />
 </figure>
 
-And finally to round out this first iteration the updated email provided more direct entries into specific tasks then the screens they landed on had much more contextual help to get them going.
+And updated reorder the tab structure to flow that better follow the user journey; “being people in”, “organize them on teams” and “run the day to day operations”.
 
-</header>
+<figure class="Article-image u-padTopMd">
+  <img src="/../../img/dashboard/New-Site-Arch.jpg" />
+</figure>
 
 </section>
 
-<section class="Article-section">
+<section class="Article-section u-padBottomMd">
 
-### My Roles
+## My Roles
+
+I played a lot of different roles with this project, really tried to own the collaboration aspect of it to help push things along and gain buy in from our key stakeholders.
+
 * Project manager, Designer, Front End Dev
 * scheduled all meetings 
 * organizing much of the collaboration
@@ -259,17 +256,16 @@ And finally to round out this first iteration the updated email provided more di
 * Write React, HTML and CSS for the parts of the the getting started panel and as space
 * Wrote Ruby, HTML and CSS for the tab reorder and no data screens on tabs
 
-### Measuring Success
-Measuring success was the biggest struggle on this project.
-
-### Next Steps
-* Continue updating and cleaning up the no data screens across the site
-* Continue mapping out customer journeys to refine specific onboarding experiences and usability in general
-* Investigate or be methods of user onboarding like in app release notes and personalization.
-
 </section>
 
 
 <footer class="Article-footer">
-
+  <div class="Grid">
+    <div class="Grid-Cell u-size1of1 u-sm-size1of2 u-textCenter">
+      <a class="figma_badge" href="https://projects.invisionapp.com/freehand/document/RkvEijVl7" target="_blank">
+      <strong class="u-block u-padBottomMd">View the Project on Invision</strong>
+      <img src="/../../img/invision_badge.png" />
+      </a>
+    </div>
+  </div>
 </footer>
